@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://murugesh-maligai-annur.netlify.app/sitemap.xml

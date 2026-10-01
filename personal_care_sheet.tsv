@@ -1,0 +1,95 @@
+﻿ID	Category	Name	Price	Unit	Image	Icon	InStock
+care-hamam-10rs	personal-care	Hamam Neem Soap (à®¹à®®à®¾à®®à¯ à®šà¯‹à®ªà¯à®ªà¯ - â‚¹10)	10	1 Bar (â‚¹10)	images/hamam_soap.png	fa-soap	TRUE
+care-hamam-38rs	personal-care	Hamam Neem Soap (à®¹à®®à®¾à®®à¯ à®šà¯‹à®ªà¯à®ªà¯ - 100g)	38	100 g	images/hamam_soap.png	fa-soap	TRUE
+care-hamam-67rs	personal-care	Hamam Neem Soap (à®¹à®®à®¾à®®à¯ à®šà¯‹à®ªà¯à®ªà¯ - 150g / Pack)	67	1 Pack (â‚¹67)	images/hamam_soap.png	fa-soap	TRUE
+care-medimix-10rs	personal-care	Medimix Ayurvedic Soap (à®®à¯†à®Ÿà®¿à®®à®¿à®•à¯à®¸à¯ - â‚¹10)	10	1 Bar (â‚¹10)	images/medimix_soap.png	fa-soap	TRUE
+care-medimix-26rs	personal-care	Medimix Ayurvedic Soap (à®®à¯†à®Ÿà®¿à®®à®¿à®•à¯à®¸à¯ - â‚¹26)	26	1 Bar (â‚¹26)	images/medimix_soap.png	fa-soap	TRUE
+care-medimix-48rs	personal-care	Medimix Ayurvedic Soap (à®®à¯†à®Ÿà®¿à®®à®¿à®•à¯à®¸à¯ - â‚¹48)	48	1 Bar (â‚¹48)	images/medimix_soap.png	fa-soap	TRUE
+care-medimix-105rs	personal-care	Medimix Ayurvedic Soap Cut Pack (à®®à¯†à®Ÿà®¿à®®à®¿à®•à¯à®¸à¯ - â‚¹105 Pack)	105	1 Multipack (â‚¹105)	images/medimix_soap.png	fa-soap	TRUE
+care-cinthol-orig-10rs	personal-care	Cinthol Original Soap (à®šà®¿à®©à¯à®¤à®¾à®²à¯ à®’à®°à®¿à®œà®¿à®©à®²à¯ - â‚¹10)	10	1 Bar (â‚¹10)	images/cinthol_orig_soap.png	fa-soap	TRUE
+care-cinthol-orig-28rs	personal-care	Cinthol Original Soap (à®šà®¿à®©à¯à®¤à®¾à®²à¯ à®’à®°à®¿à®œà®¿à®©à®²à¯ - â‚¹28)	28	1 Bar (â‚¹28)	images/cinthol_orig_soap.png	fa-soap	TRUE
+care-cinthol-orig-48rs	personal-care	Cinthol Original Soap (à®šà®¿à®©à¯à®¤à®¾à®²à¯ à®’à®°à®¿à®œà®¿à®©à®²à¯ - â‚¹48)	48	1 Bar (â‚¹48)	images/cinthol_orig_soap.png	fa-soap	TRUE
+care-cinthol-orig-120rs	personal-care	Cinthol Original Soap Cut Pack (à®šà®¿à®©à¯à®¤à®¾à®²à¯ - â‚¹120 Pack)	120	1 Multipack (â‚¹120)	images/cinthol_orig_soap.png	fa-soap	TRUE
+care-cinthol-lime-10rs	personal-care	Cinthol Lime Fresh Soap (à®šà®¿à®©à¯à®¤à®¾à®²à¯ à®²à¯†à®®à®©à¯ - â‚¹10)	10	1 Bar (â‚¹10)	images/cinthol_lime_soap.png	fa-soap	TRUE
+care-cinthol-lime-45rs	personal-care	Cinthol Lime Fresh Soap (à®šà®¿à®©à¯à®¤à®¾à®²à¯ à®²à¯†à®®à®©à¯ - â‚¹45)	45	1 Bar (â‚¹45)	images/cinthol_lime_soap.png	fa-soap	TRUE
+care-cinthol-black-10rs	personal-care	Cinthol Cool / Black Soap (à®šà®¿à®©à¯à®¤à®¾à®²à¯ à®•à¯‚à®²à¯ - â‚¹10)	10	1 Bar (â‚¹10)	images/cinthol_black_soap.png	fa-soap	TRUE
+care-cinthol-black-40rs	personal-care	Cinthol Cool / Black Soap (à®šà®¿à®©à¯à®¤à®¾à®²à¯ à®•à¯‚à®²à¯ - â‚¹40)	40	1 Bar (â‚¹40)	images/cinthol_black_soap.png	fa-soap	TRUE
+care-lifebuoy-red-10rs	personal-care	Lifebuoy Total Red Soap (à®²à¯ˆà®ƒà®ªà®¾à®¯à¯ à®°à¯†à®Ÿà¯ - â‚¹10)	10	1 Bar (â‚¹10)	images/lifebuoy_red_soap.png	fa-soap	TRUE
+care-lifebuoy-red-38rs	personal-care	Lifebuoy Total Red Soap (à®²à¯ˆà®ƒà®ªà®¾à®¯à¯ à®°à¯†à®Ÿà¯ - 100g)	38	100 g	images/lifebuoy_red_soap.png	fa-soap	TRUE
+care-lux-rose-10rs	personal-care	Lux Rose Beauty Soap (à®²à®•à¯à®¸à¯ à®°à¯‹à®¸à¯ - â‚¹10)	10	1 Bar (â‚¹10)	images/lux_rose_soap.png	fa-soap	TRUE
+care-lux-rose-38rs	personal-care	Lux Rose Beauty Soap (à®²à®•à¯à®¸à¯ à®°à¯‹à®¸à¯ - â‚¹38)	38	1 Bar (â‚¹38)	images/lux_rose_soap.png	fa-soap	TRUE
+care-lux-rose-67rs	personal-care	Lux Rose Beauty Soap (à®²à®•à¯à®¸à¯ à®°à¯‹à®¸à¯ - â‚¹67 Pack)	67	1 Pack (â‚¹67)	images/lux_rose_soap.png	fa-soap	TRUE
+care-mysore-sandal-38rs	personal-care	Mysore Sandal Soap (à®®à¯ˆà®šà¯‚à®°à¯ à®šà®¾à®£à¯à®Ÿà®²à¯ - â‚¹38)	38	1 Bar (â‚¹38)	images/mysore_sandal_soap.png	fa-soap	TRUE
+care-mysore-sandal-70rs	personal-care	Mysore Sandal Soap (à®®à¯ˆà®šà¯‚à®°à¯ à®šà®¾à®£à¯à®Ÿà®²à¯ - â‚¹70)	70	1 Bar (â‚¹70)	images/mysore_sandal_soap.png	fa-soap	TRUE
+care-mysore-sandal-90rs	personal-care	Mysore Sandal Soap (à®®à¯ˆà®šà¯‚à®°à¯ à®šà®¾à®£à¯à®Ÿà®²à¯ - â‚¹90)	90	1 Bar (â‚¹90)	images/mysore_sandal_soap.png	fa-soap	TRUE
+care-dettol-soap-10rs	personal-care	Dettol Original Bathing Soap (à®Ÿà¯†à®Ÿà¯à®Ÿà®¾à®²à¯ à®šà¯‹à®ªà¯à®ªà¯ - â‚¹10)	10	1 Bar (â‚¹10)	images/dettol_soap.png	fa-soap	TRUE
+care-dettol-soap-40rs	personal-care	Dettol Original Bathing Soap (à®Ÿà¯†à®Ÿà¯à®Ÿà®¾à®²à¯ à®šà¯‹à®ªà¯à®ªà¯ - â‚¹40)	40	1 Bar (â‚¹40)	images/dettol_soap.png	fa-soap	TRUE
+care-santoor-soap-10rs	personal-care	Santoor Sandal & Turmeric (à®šà®¨à¯à®¤à¯‚à®°à¯ à®šà¯‹à®ªà¯à®ªà¯ - â‚¹10)	10	1 Bar (â‚¹10)	images/santoor_soap.png	fa-soap	TRUE
+care-santoor-soap-38rs	personal-care	Santoor Sandal & Turmeric (à®šà®¨à¯à®¤à¯‚à®°à¯ à®šà¯‹à®ªà¯à®ªà¯ - â‚¹38)	38	1 Bar (â‚¹38)	images/santoor_soap.png	fa-soap	TRUE
+care-pears-pure-50rs	personal-care	Pears Pure & Gentle Soap (à®ªà®¿à®¯à®°à¯à®¸à¯ à®¨à¯€à®²à®®à¯/à®ªà®šà¯à®šà¯ˆ - â‚¹50)	50	1 Bar (â‚¹50)	images/pears_pure_soap.png	fa-soap	TRUE
+care-pears-orange-50rs	personal-care	Pears Amber Glycerin Soap (à®ªà®¿à®¯à®°à¯à®¸à¯ à®†à®°à®žà¯à®šà¯ - â‚¹50)	50	1 Bar (â‚¹50)	images/pears_orange_soap.png	fa-soap	TRUE
+care-dove-soap-25rs	personal-care	Dove Cream Beauty Bar (à®Ÿà®µà¯ à®šà¯‹à®ªà¯à®ªà¯ - â‚¹25)	25	1 Bar (â‚¹25)	images/dove_soap.png	fa-soap	TRUE
+care-dove-soap-52rs	personal-care	Dove Cream Beauty Bar (à®Ÿà®µà¯ à®šà¯‹à®ªà¯à®ªà¯ - â‚¹52)	52	1 Bar (â‚¹52)	images/dove_soap.png	fa-soap	TRUE
+care-margo-soap-36rs	personal-care	Margo Original Neem Soap (à®®à®¾à®°à¯à®•à¯‹ à®µà¯‡à®ªà¯à®ªà®¿à®²à¯ˆ - â‚¹36)	36	1 Bar (â‚¹36)	images/margo_soap.png	fa-soap	TRUE
+care-nature-power-lime-42rs	personal-care	Nature Power Lime Beauty Soap (à®¨à¯‡à®šà¯à®šà®°à¯ à®ªà®µà®°à¯ à®²à¯†à®®à®©à¯ - â‚¹42)	42	1 Bar (â‚¹42)	images/nature_power_lime.png	fa-soap	TRUE
+care-nature-power-sandal-42rs	personal-care	Nature Power Sandal Soap (à®¨à¯‡à®šà¯à®šà®°à¯ à®ªà®µà®°à¯ à®šà®¨à¯à®¤à®©à®®à¯ - â‚¹42)	42	1 Bar (â‚¹42)	images/nature_power_sandal.png	fa-soap	TRUE
+care-nature-power-lavender-42rs	personal-care	Nature Power Lavender Soap (à®¨à¯‡à®šà¯à®šà®°à¯ à®ªà®µà®°à¯ à®²à®¾à®µà¯†à®£à¯à®Ÿà®°à¯ - â‚¹42)	42	1 Bar (â‚¹42)	images/nature_power_lavender.png	fa-soap	TRUE
+care-nature-power-papaya-52rs	personal-care	Nature Power Papaya Aura Soap (à®¨à¯‡à®šà¯à®šà®°à¯ à®ªà®µà®°à¯ à®ªà®ªà¯à®ªà®¾à®³à®¿ - â‚¹52)	52	1 Bar (â‚¹52)	images/nature_power_papaya.png	fa-soap	TRUE
+care-vivel-soap-34rs	personal-care	Vivel Satin Soft Beauty Soap (à®µà®¿à®µà¯†à®²à¯ à®šà¯‹à®ªà¯à®ªà¯ - â‚¹34)	34	1 Bar (â‚¹34)	images/vivel_soap.png	fa-soap	TRUE
+care-liril-soap-38rs	personal-care	Liril Lemon & Tea Tree Soap (à®²à®¿à®°à®¿à®²à¯ à®Žà®²à¯à®®à®¿à®šà¯à®šà¯ˆ - â‚¹38)	38	1 Bar (â‚¹38)	images/liril_soap.png	fa-soap	TRUE
+care-chandrika-soap-40rs	personal-care	Chandrika Ayurvedic Soap (à®šà®¨à¯à®¤à®¿à®°à®¿à®•à®¾ à®šà¯‹à®ªà¯à®ªà¯ - â‚¹40)	40	1 Bar (â‚¹40)	images/chandrika_soap.png	fa-soap	TRUE
+care-rexona-soap-42rs	personal-care	Rexona Coconut & Olive Soap (à®°à¯†à®•à¯à®šà¯‹à®©à®¾ à®šà¯‹à®ªà¯à®ªà¯ - â‚¹42)	42	1 Bar (â‚¹42)	images/rexona_soap.png	fa-soap	TRUE
+care-clinic-plus-1rs	personal-care	Clinic Plus Strong & Long Shampoo (à®•à®¿à®³à®¿à®©à®¿à®•à¯ à®ªà®¿à®³à®¸à¯ - â‚¹1 Sachet)	1	1 Sachet (â‚¹1)	images/clinic_plus_shampoo.png	fa-pump-soap	TRUE
+care-sunsilk-black-1rs	personal-care	Sunsilk Black Shine Shampoo (à®šà®©à¯à®šà®¿à®²à¯à®•à¯ à®ªà®¿à®³à®¾à®•à¯ - â‚¹1 Sachet)	1	1 Sachet (â‚¹1)	images/sunsilk_black_shampoo.png	fa-pump-soap	TRUE
+care-head-shoulders-2rs	personal-care	Head & Shoulders Anti-Dandruff (à®¹à¯†à®Ÿà¯ à®…à®£à¯à®Ÿà¯ à®·à¯‹à®²à¯à®Ÿà®°à¯à®¸à¯ - â‚¹2 Sachet)	2	1 Sachet (â‚¹2)	images/head_shoulders_shampoo.png	fa-pump-soap	TRUE
+care-meera-shampoo-badam-2rs	personal-care	Meera Shampoo Badam & Shikakai (à®®à¯€à®°à®¾ à®ªà®¾à®¤à®¾à®®à¯ à®·à®¾à®®à¯à®ªà¯‚ - â‚¹2 Sachet)	2	1 Sachet (â‚¹2)	images/meera_shampoo_badam.png	fa-pump-soap	TRUE
+care-meera-shampoo-onion-2rs	personal-care	Meera Shampoo Small Onion & Fenugreek (à®®à¯€à®°à®¾ à®šà®¿à®©à¯à®© à®µà¯†à®™à¯à®•à®¾à®¯à®®à¯ à®·à®¾à®®à¯à®ªà¯‚ - â‚¹2 Sachet)	2	1 Sachet (â‚¹2)	images/meera_shampoo_onion.png	fa-pump-soap	TRUE
+care-meera-powder-4rs	personal-care	Meera Herbal Shikakai Powder (à®®à¯€à®°à®¾ à®šà¯€à®¯à®•à¯à®•à®¾à®¯à¯ à®¤à¯‚à®³à¯ - â‚¹4 Sachet)	4	1 Sachet (â‚¹4)	images/meera_powder.png	fa-pump-soap	TRUE
+care-chik-shampoo-1rs	personal-care	Chik Hair Shampoo (à®šà®¿à®•à¯ à®·à®¾à®®à¯à®ªà¯‚ - â‚¹1 Sachet)	1	1 Sachet (â‚¹1)	images/chik_shampoo.png	fa-pump-soap	TRUE
+care-karthika-shampoo-1rs	personal-care	Karthika Shikakai Shampoo (à®•à®¾à®°à¯à®¤à¯à®¤à®¿à®•à®¾ à®·à®¾à®®à¯à®ªà¯‚ - â‚¹1 Sachet)	1	1 Sachet (â‚¹1)	images/karthika_shampoo.png	fa-pump-soap	TRUE
+care-dove-shampoo-2rs	personal-care	Dove Daily Shine Shampoo (à®Ÿà®µà¯ à®·à®¾à®®à¯à®ªà¯‚ - â‚¹2 Sachet)	2	1 Sachet (â‚¹2)	images/dove_shampoo.png	fa-pump-soap	TRUE
+care-himalaya-shampoo-2rs	personal-care	Himalaya Protein Shampoo (à®‡à®®à®¾à®²à®¯à®¾ à®·à®¾à®®à¯à®ªà¯‚ - â‚¹2 Sachet)	2	1 Sachet (â‚¹2)	images/himalaya_shampoo.png	fa-pump-soap	TRUE
+care-colgate-strong-10rs	personal-care	Colgate Strong Teeth Toothpaste (à®•à¯‹à®²à¯à®•à¯‡à®Ÿà¯ à®ªà®±à¯à®ªà®šà¯ˆ - â‚¹10)	10	1 Pack (â‚¹10)	images/colgate_strong_paste.png	fa-tooth	TRUE
+care-colgate-strong-18rs	personal-care	Colgate Strong Teeth Toothpaste (à®•à¯‹à®²à¯à®•à¯‡à®Ÿà¯ à®ªà®±à¯à®ªà®šà¯ˆ - â‚¹18)	18	1 Tube (â‚¹18)	images/colgate_strong_paste.png	fa-tooth	TRUE
+care-colgate-strong-68rs	personal-care	Colgate Strong Teeth Toothpaste (à®•à¯‹à®²à¯à®•à¯‡à®Ÿà¯ à®ªà®±à¯à®ªà®šà¯ˆ - â‚¹68)	68	1 Tube (â‚¹68)	images/colgate_strong_paste.png	fa-tooth	TRUE
+care-closeup-red-10rs	personal-care	Close Up Red Hot Gel Toothpaste (à®•à¯à®³à¯‹à®¸à¯ à®…à®ªà¯ à®œà¯†à®²à¯ - â‚¹10)	10	1 Pack (â‚¹10)	images/closeup_red_paste.png	fa-tooth	TRUE
+care-closeup-red-18rs	personal-care	Close Up Red Hot Gel Toothpaste (à®•à¯à®³à¯‹à®¸à¯ à®…à®ªà¯ à®œà¯†à®²à¯ - â‚¹18)	18	1 Tube (â‚¹18)	images/closeup_red_paste.png	fa-tooth	TRUE
+care-closeup-red-70rs	personal-care	Close Up Red Hot Gel Toothpaste (à®•à¯à®³à¯‹à®¸à¯ à®…à®ªà¯ à®œà¯†à®²à¯ - â‚¹70)	70	1 Tube (â‚¹70)	images/closeup_red_paste.png	fa-tooth	TRUE
+care-sensodyne-20rs	personal-care	Sensodyne Toothpaste (à®šà¯†à®©à¯à®šà¯‹à®Ÿà¯ˆà®©à¯ à®ªà®±à¯à®ªà®šà¯ˆ - â‚¹20)	20	1 Tube (â‚¹20)	images/sensodyne_paste.png	fa-tooth	TRUE
+care-sensodyne-88rs	personal-care	Sensodyne Toothpaste (à®šà¯†à®©à¯à®šà¯‹à®Ÿà¯ˆà®©à¯ à®ªà®±à¯à®ªà®šà¯ˆ - 75g)	88	75 g (â‚¹88)	images/sensodyne_paste.png	fa-tooth	TRUE
+care-pepsodent-10rs	personal-care	Pepsodent Germicheck Toothpaste (à®ªà¯†à®ªà¯à®šà¯‹à®Ÿà¯†à®©à¯à®Ÿà¯ - â‚¹10)	10	1 Pack (â‚¹10)	images/pepsodent_paste.png	fa-tooth	TRUE
+care-pepsodent-18rs	personal-care	Pepsodent Germicheck Toothpaste (à®ªà¯†à®ªà¯à®šà¯‹à®Ÿà¯†à®©à¯à®Ÿà¯ - â‚¹18)	18	1 Tube (â‚¹18)	images/pepsodent_paste.png	fa-tooth	TRUE
+care-pepsodent-72rs	personal-care	Pepsodent Germicheck Toothpaste (à®ªà¯†à®ªà¯à®šà¯‹à®Ÿà¯†à®©à¯à®Ÿà¯ - â‚¹72)	72	1 Tube (â‚¹72)	images/pepsodent_paste.png	fa-tooth	TRUE
+care-dabur-red-10rs	personal-care	Dabur Red Ayurvedic Toothpaste (à®Ÿà®¾à®ªà®°à¯ à®°à¯†à®Ÿà¯ à®ªà¯‡à®¸à¯à®Ÿà¯ - â‚¹10)	10	1 Pack (â‚¹10)	images/dabur_red_paste.png	fa-tooth	TRUE
+care-dabur-red-18rs	personal-care	Dabur Red Ayurvedic Toothpaste (à®Ÿà®¾à®ªà®°à¯ à®°à¯†à®Ÿà¯ à®ªà¯‡à®¸à¯à®Ÿà¯ - â‚¹18)	18	1 Tube (â‚¹18)	images/dabur_red_paste.png	fa-tooth	TRUE
+care-dabur-red-68rs	personal-care	Dabur Red Ayurvedic Toothpaste (à®Ÿà®¾à®ªà®°à¯ à®°à¯†à®Ÿà¯ à®ªà¯‡à®¸à¯à®Ÿà¯ - â‚¹68)	68	1 Tube (â‚¹68)	images/dabur_red_paste.png	fa-tooth	TRUE
+care-toothbrush-13rs	personal-care	Classic Toothbrush (à®Ÿà¯‚à®¤à¯ à®ªà®¿à®°à®·à¯ - â‚¹13)	13	1 Piece (â‚¹13)	images/oral_b_brush.png	fa-tooth	TRUE
+care-toothbrush-15rs	personal-care	Oral-B Cavity Defense Toothbrush (à®“à®°à®²à¯-à®ªà®¿ à®ªà®¿à®°à®·à¯ - â‚¹15)	15	1 Piece (â‚¹15)	images/oral_b_brush.png	fa-tooth	TRUE
+care-toothbrush-35rs	personal-care	Colgate Zig Zag Charcoal Toothbrush (à®•à¯‹à®²à¯à®•à¯‡à®Ÿà¯ à®œà®¿à®•à¯ à®œà®¾à®•à¯ - â‚¹35)	35	1 Piece (â‚¹35)	images/colgate_zigzag_brush.png	fa-tooth	TRUE
+care-toothbrush-40rs	personal-care	Colgate Super Flexi Clean Toothbrush (à®•à¯‹à®²à¯à®•à¯‡à®Ÿà¯ à®šà¯‚à®ªà¯à®ªà®°à¯ à®ƒà®ªà¯à®³à¯†à®•à¯à®¸à®¿ - â‚¹40)	40	1 Piece (â‚¹40)	images/colgate_super_flexi_brush.png	fa-tooth	TRUE
+care-gokul-santol-62rs	personal-care	Gokul Santol Sandal Talcum Powder (à®•à¯‹à®•à¯à®²à¯ à®šà®¨à¯à®¤à¯‹à®²à¯ - â‚¹62)	62	1 Pack (â‚¹62)	images/gokul_santol_powder.png	fa-spa	TRUE
+care-gokul-santol-120rs	personal-care	Gokul Santol Sandal Talcum Powder (à®•à¯‹à®•à¯à®²à¯ à®šà®¨à¯à®¤à¯‹à®²à¯ - â‚¹120)	120	1 Pack (â‚¹120)	images/gokul_santol_powder.png	fa-spa	TRUE
+care-ponds-powder-10rs	personal-care	Ponds Dreamflower Pink Lily Talcum Powder (à®ªà®¾à®£à¯à®Ÿà¯à®¸à¯ à®ªà®µà¯à®Ÿà®°à¯ - â‚¹10)	10	1 Pack (â‚¹10)	images/ponds_powder.png	fa-spa	TRUE
+care-ponds-powder-65rs	personal-care	Ponds Dreamflower Pink Lily Talcum Powder (à®ªà®¾à®£à¯à®Ÿà¯à®¸à¯ à®ªà®µà¯à®Ÿà®°à¯ - â‚¹65)	65	100 g (â‚¹65)	images/ponds_powder.png	fa-spa	TRUE
+care-ponds-powder-130rs	personal-care	Ponds Dreamflower Pink Lily Talcum Powder (à®ªà®¾à®£à¯à®Ÿà¯à®¸à¯ à®ªà®µà¯à®Ÿà®°à¯ - â‚¹130)	130	300 g (â‚¹130)	images/ponds_powder.png	fa-spa	TRUE
+care-ponds-lavender-10rs	personal-care	Ponds Magic Lavender Bloom Talcum Powder (à®ªà®¾à®£à¯à®Ÿà¯à®¸à¯ à®²à®¾à®µà¯†à®£à¯à®Ÿà®°à¯ à®ªà®µà¯à®Ÿà®°à¯ - â‚¹10)	10	1 Pack (â‚¹10)	images/ponds_lavender_powder.png	fa-spa	TRUE
+care-ponds-lavender-65rs	personal-care	Ponds Magic Lavender Bloom Talcum Powder (à®ªà®¾à®£à¯à®Ÿà¯à®¸à¯ à®²à®¾à®µà¯†à®£à¯à®Ÿà®°à¯ à®ªà®µà¯à®Ÿà®°à¯ - â‚¹65)	65	100 g (â‚¹65)	images/ponds_lavender_powder.png	fa-spa	TRUE
+care-ponds-lavender-130rs	personal-care	Ponds Magic Lavender Bloom Talcum Powder (à®ªà®¾à®£à¯à®Ÿà¯à®¸à¯ à®²à®¾à®µà¯†à®£à¯à®Ÿà®°à¯ à®ªà®µà¯à®Ÿà®°à¯ - â‚¹130)	130	300 g (â‚¹130)	images/ponds_lavender_powder.png	fa-spa	TRUE
+care-glow-lovely-10rs	personal-care	Fair & Lovely / Glow & Lovely Cream (à®ƒà®ªà¯‡à®°à¯ & à®²à®µà¯à®²à®¿ - â‚¹10)	10	1 Pouch (â‚¹10)	images/fair_lovely_cream.png	fa-spa	TRUE
+care-glow-lovely-18rs	personal-care	Fair & Lovely / Glow & Lovely Cream (à®ƒà®ªà¯‡à®°à¯ & à®²à®µà¯à®²à®¿ - â‚¹18)	18	1 Tube (â‚¹18)	images/fair_lovely_cream.png	fa-spa	TRUE
+care-glow-lovely-65rs	personal-care	Fair & Lovely / Glow & Lovely Cream (à®ƒà®ªà¯‡à®°à¯ & à®²à®µà¯à®²à®¿ - 50g)	65	50 g (â‚¹65)	images/fair_lovely_cream.png	fa-spa	TRUE
+care-ponds-face-10rs	personal-care	Ponds Bright Beauty Serum Cream (à®ªà®¾à®£à¯à®Ÿà¯à®¸à¯ à®•à®¿à®°à¯€à®®à¯ - â‚¹10)	10	1 Sachet (â‚¹10)	images/ponds_bright_beauty_cream.png	fa-spa	TRUE
+care-ponds-face-65rs	personal-care	Ponds Bright Beauty Serum Cream (à®ªà®¾à®£à¯à®Ÿà¯à®¸à¯ à®•à®¿à®°à¯€à®®à¯ - â‚¹65)	65	1 Tube / Jar (â‚¹65)	images/ponds_bright_beauty_cream.png	fa-spa	TRUE
+care-vaseline-6rs	personal-care	Vaseline Petroleum Jelly (à®µà®¾à®šà®²à®¿à®©à¯ - â‚¹6)	6	1 Piece (â‚¹6)	images/vaseline_jelly.png	fa-spa	TRUE
+care-vaseline-10rs	personal-care	Vaseline Petroleum Jelly (à®µà®¾à®šà®²à®¿à®©à¯ - â‚¹10)	10	1 Piece (â‚¹10)	images/vaseline_jelly.png	fa-spa	TRUE
+care-dettol-liquid-18rs	personal-care	Dettol Antiseptic Liquid (à®Ÿà¯†à®Ÿà¯à®Ÿà®¾à®²à¯ à®¤à®¿à®°à®µà®®à¯ - 60ml)	18	60 ml (â‚¹18)	images/dettol_antiseptic.png	fa-shield-halved	TRUE
+care-dettol-liquid-44rs	personal-care	Dettol Antiseptic Liquid (à®Ÿà¯†à®Ÿà¯à®Ÿà®¾à®²à¯ à®¤à®¿à®°à®µà®®à¯ - 110ml)	44	110 ml (â‚¹44)	images/dettol_antiseptic.png	fa-shield-halved	TRUE
+care-dettol-liquid-73rs	personal-care	Dettol Antiseptic Liquid (à®Ÿà¯†à®Ÿà¯à®Ÿà®¾à®²à¯ à®¤à®¿à®°à®µà®®à¯ - 250ml)	73	250 ml (â‚¹73)	images/dettol_antiseptic.png	fa-shield-halved	TRUE
+care-winner-blade-10rs	personal-care	Winner Shaving Blades (à®µà®¿à®©à¯à®©à®°à¯ à®ªà®¿à®³à¯‡à®Ÿà¯ - â‚¹10)	10	1 Pack (â‚¹10)	images/winner_blade.png	fa-shield-halved	TRUE
+care-gillette-blade-15rs	personal-care	Gillette 7 O'Clock Super Platinum Blades (à®•à®¿à®²à¯à®²à¯†à®Ÿà¯ à®ªà®¿à®³à¯‡à®Ÿà¯ - â‚¹15 Box)	15	1 Box (â‚¹15)	images/gillette_blade.png	fa-shield-halved	TRUE
+care-gillette-razor-25rs	personal-care	Gillette Presto / Machine Razor (à®•à®¿à®²à¯à®²à¯†à®Ÿà¯ à®°à¯‡à®šà®°à¯ - â‚¹25)	25	1 Razor (â‚¹25)	images/gillette_razor.png	fa-shield-halved	TRUE
+care-whisper-choice-35rs	personal-care	Whisper Choice Wings Sanitary Pads (à®µà®¿à®¸à¯à®ªà®°à¯ à®šà®¾à®¯à¯à®¸à¯ - â‚¹35)	35	1 Pack (â‚¹35)	images/whisper_choice.png	fa-shield-halved	TRUE
+care-whisper-choice-50rs	personal-care	Whisper Choice Wings Sanitary Pads (à®µà®¿à®¸à¯à®ªà®°à¯ à®šà®¾à®¯à¯à®¸à¯ - â‚¹50)	50	1 Pack (â‚¹50)	images/whisper_choice.png	fa-shield-halved	TRUE
+care-stayfree-33rs	personal-care	Stayfree Secure Cottony Pads (à®¸à¯à®Ÿà¯‡à®ƒà®ªà¯à®°à¯€ à®¨à®¾à®ªà¯à®•à®¿à®©à¯ - â‚¹33)	33	1 Pack (â‚¹33)	images/stayfree_secure.png	fa-shield-halved	TRUE
+care-stayfree-45rs	personal-care	Stayfree Secure Cottony Pads (à®¸à¯à®Ÿà¯‡à®ƒà®ªà¯à®°à¯€ à®¨à®¾à®ªà¯à®•à®¿à®©à¯ - â‚¹45)	45	1 Pack (â‚¹45)	images/stayfree_secure.png	fa-shield-halved	TRUE
+

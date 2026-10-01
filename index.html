@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Murugesh Maligai - Premium local family grocery store in Annur, Coimbatore. Serving 50+ years of trust, farm fresh vegetables, pure dairy, cold-pressed oils, and signature ANNAKILI Rice.">
+  <title>Murugesh Maligai | Annur's Trusted Supermarket Since 1970</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#15803d">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <!-- FontAwesome Icons for modern aesthetic -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       0. TOP STORE TICKER & TRUST BAR
+       ========================================================================== -->
+  <div class="store-ticker-bar">
+    <div class="container ticker-flex">
+      <span><i class="fa-solid fa-clock"></i> <strong>Open Today:</strong> 6:00 AM – 10:00 PM</span>
+      <span class="ticker-divider">•</span>
+      <span><i class="fa-solid fa-truck-fast"></i> <strong>15–30 Min Free Delivery</strong> in Annur</span>
+      <span class="ticker-divider">•</span>
+      <span><i class="fa-brands fa-whatsapp"></i> WhatsApp Orders: <strong><a href="https://wa.me/919994258914" style="color: #FDE047;">9994258914</a></strong></span>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       1. STICKY HEADER
+       ========================================================================== -->
+  <header class="main-header" id="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        Murugesh Maligai
+        <span class="logo-sub">Est. 1970</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="shop.html" class="nav-link">Shop Catalog</a></li>
+          <li><a href="#departments" class="nav-link">Departments</a></li>
+          <li><a href="#annakili" class="nav-link">ANNAKILI Rice</a></li>
+          <li><a href="#about" class="nav-link">Legacy & Story</a></li>
+          <li><a href="#contact" class="nav-link">Contact & Map</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Install App Button -->
+        <button class="pwa-install-btn" id="pwaInstallBtn" title="Install Web App on your phone">
+          <i class="fa-solid fa-download"></i>
+          <span>Install App</span>
+        </button>
+
+        <!-- Direct Call Button -->
+        <a href="tel:9994258914" class="header-contact-btn" title="Call Store">
+          <i class="fa-solid fa-phone"></i>
+          <span>9994258914</span>
+        </a>
+      </div>
+
+      <!-- Mobile Navigation Hamburger -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       2. CLEAN MODERN HERO SECTION
+       ========================================================================== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge-clean">
+        <i class="fa-solid fa-award"></i> Annur's Trusted Supermarket • Since 1970
+      </div>
+
+      <h1>Murugesh Maligai</h1>
+
+      <p class="hero-tagline">
+        Fresh farm vegetables, pure country dairy, cold-pressed oils, and famous ANNAKILI Ponni Rice.
+      </p>
+
+      <!-- Clean Search Box -->
+      <div class="hero-search-container">
+        <form action="shop.html" method="GET" class="hero-search-form">
+          <input 
+            type="search" 
+            name="search" 
+            placeholder="Search 780+ items (e.g. Rice, Ghee, Tomato, Oil)..." 
+            class="hero-search-input"
+            autocomplete="off"
+            required
+          >
+          <button type="submit" class="hero-search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Search</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="hero-ctas">
+        <a href="shop.html" class="btn btn-primary">
+          <i class="fa-solid fa-basket-shopping"></i> Shop 780+ Items
+        </a>
+        <a href="https://wa.me/919994258914?text=Hello%20Murugesh%20Maligai,%20I%20want%20to%20order%20groceries" target="_blank" rel="noopener" class="btn btn-whatsapp-hero">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp Order
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       2.5 TRUST FEATURES STRIP
+       ========================================================================== -->
+  <section class="home-trust-strip">
+    <div class="container">
+      <div class="trust-features-grid">
+        <div class="trust-feature-item">
+          <div class="trust-feature-icon"><i class="fa-solid fa-seedling"></i></div>
+          <div class="trust-feature-text">
+            <h4>Farm Fresh Harvest</h4>
+            <p>Direct from local farms daily</p>
+          </div>
+        </div>
+
+        <div class="trust-feature-item">
+          <div class="trust-feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <div class="trust-feature-text">
+            <h4>15–30 Min Express</h4>
+            <p>Fast doorstep delivery in Annur</p>
+          </div>
+        </div>
+
+        <div class="trust-feature-item">
+          <div class="trust-feature-icon"><i class="fa-solid fa-tags"></i></div>
+          <div class="trust-feature-text">
+            <h4>Wholesale Fair Pricing</h4>
+            <p>Mill-direct rates with zero markup</p>
+          </div>
+        </div>
+
+        <div class="trust-feature-item">
+          <div class="trust-feature-icon"><i class="fa-solid fa-leaf"></i></div>
+          <div class="trust-feature-text">
+            <h4>100% Eco Friendly</h4>
+            <p>Zero-plastic bags store policy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. 8-DEPARTMENT MODERN VISUAL CATEGORY GRID
+       ========================================================================== -->
+  <section class="section-padding categories-section" id="departments">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-gold">Full Store Selection</span>
+        <h2>Explore Our 8 Fresh Departments</h2>
+        <p>Browse handpicked daily staples, pure cold-pressed provisions, country dairy, and authentic South Indian spices.</p>
+      </div>
+
+      <div class="home-categories-grid">
+        <!-- Dept 1: Vegetables -->
+        <a href="shop.html?category=vegetables" class="home-cat-card">
+          <div class="home-cat-header">
+            <div class="home-cat-icon cat-icon-veg">🥦</div>
+            <span class="home-cat-badge">🌾 Farm Direct</span>
+          </div>
+          <h3 class="home-cat-title">Fresh Vegetables</h3>
+          <p class="home-cat-desc">Daily morning harvest of onions, potatoes, tomatoes, greens, and crunchy local country produce.</p>
+          <div class="home-cat-footer">
+            <span class="home-cat-count">Daily Fresh Stock</span>
+            <span class="home-cat-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Dept 2: Dairy & Country Ghee -->
+        <a href="shop.html?category=dairy" class="home-cat-card">
+          <div class="home-cat-header">
+            <div class="home-cat-icon cat-icon-dairy">🥛</div>
+            <span class="home-cat-badge">🥛 100% Pure</span>
+          </div>
+          <h3 class="home-cat-title">Dairy & Country Ghee</h3>
+          <p class="home-cat-desc">Pure cow milk, creamy curd, traditional butter, soft paneer, and rich aromatic country ghee.</p>
+          <div class="home-cat-footer">
+            <span class="home-cat-count">Chilled & Pure</span>
+            <span class="home-cat-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Dept 3: Signature ANNAKILI Rice & Millets -->
+        <a href="shop.html?category=rice-grains" class="home-cat-card">
+          <div class="home-cat-header">
+            <div class="home-cat-icon cat-icon-rice">🌾</div>
+            <span class="home-cat-badge">⭐ Signature Rice</span>
+          </div>
+          <h3 class="home-cat-title">ANNAKILI Rice & Millets</h3>
+          <p class="home-cat-desc">Famous Kangayam Ponni rice, unpolished millets, aromatic basmati, and nutritious daily grains.</p>
+          <div class="home-cat-footer">
+            <span class="home-cat-count">15-Day Fresh Milled</span>
+            <span class="home-cat-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Dept 4: Oils & Ghee -->
+        <a href="shop.html?category=oils-fats" class="home-cat-card">
+          <div class="home-cat-header">
+            <div class="home-cat-icon cat-icon-oil">🫒</div>
+            <span class="home-cat-badge">🌿 Cold-Pressed</span>
+          </div>
+          <h3 class="home-cat-title">Oils & Ghee</h3>
+          <p class="home-cat-desc">Traditional wood cold-pressed groundnut, sesame, coconut oils, and pure gold cooking fats.</p>
+          <div class="home-cat-footer">
+            <span class="home-cat-count">Chemical-Free</span>
+            <span class="home-cat-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Dept 5: Spices & Dals -->
+        <a href="shop.html?category=spices-pulses" class="home-cat-card">
+          <div class="home-cat-header">
+            <div class="home-cat-icon cat-icon-spices">🌶️</div>
+            <span class="home-cat-badge">🌶️ Hand-Cleaned</span>
+          </div>
+          <h3 class="home-cat-title">Spices & Pulses</h3>
+          <p class="home-cat-desc">Premium toor dal, urad dal, fragrant coriander, turmeric, cardamom, and authentic blended masalas.</p>
+          <div class="home-cat-footer">
+            <span class="home-cat-count">Aromatic Purity</span>
+            <span class="home-cat-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Dept 6: Bakery, Snacks & Beverages -->
+        <a href="shop.html?category=snacks-beverages" class="home-cat-card">
+          <div class="home-cat-header">
+            <div class="home-cat-icon cat-icon-snacks">🍪</div>
+            <span class="home-cat-badge">🍪 Crispy & Fresh</span>
+          </div>
+          <h3 class="home-cat-title">Snacks & Beverages</h3>
+          <p class="home-cat-desc">Crispy traditional savory snacks, biscuits, premium tea powders, filter coffee, and healthy drinks.</p>
+          <div class="home-cat-footer">
+            <span class="home-cat-count">Teatime Favorites</span>
+            <span class="home-cat-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Dept 7: Sacred Pooja Samagri -->
+        <a href="shop.html?category=pooja-items" class="home-cat-card">
+          <div class="home-cat-header">
+            <div class="home-cat-icon cat-icon-pooja">🪔</div>
+            <span class="home-cat-badge">🪔 Divine Purity</span>
+          </div>
+          <h3 class="home-cat-title">Pooja Essentials</h3>
+          <p class="home-cat-desc">Pure deepam oil, fragrant camphor, agarbathis, kumkum, pooja wicks, and sacred ritual provisions.</p>
+          <div class="home-cat-footer">
+            <span class="home-cat-count">Devotional Quality</span>
+            <span class="home-cat-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Dept 8: Personal & Household Care -->
+        <a href="shop.html?category=personal-care" class="home-cat-card">
+          <div class="home-cat-header">
+            <div class="home-cat-icon cat-icon-care">🧼</div>
+            <span class="home-cat-badge">🧼 Eco Friendly</span>
+          </div>
+          <h3 class="home-cat-title">Home & Personal Care</h3>
+          <p class="home-cat-desc">Herbal soaps, shampoos, eco cleaning solutions, washing powders, and daily hygienic essentials.</p>
+          <div class="home-cat-footer">
+            <span class="home-cat-count">Gentle & Safe</span>
+            <span class="home-cat-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. FEATURED ANNAKILI RICE SECTION
+       ========================================================================== -->
+  <section class="section-padding annakili-section" id="annakili">
+    <div class="container">
+      <div class="annakili-grid">
+        <div class="annakili-text">
+          <span class="badge badge-gold">⭐ OUR SIGNATURE HERITAGE SELECTION</span>
+          <h2 class="annakili-title">ANNAKILI Rice — Trusted Since 1970</h2>
+          <p class="annakili-description">
+            Authentic Kangayam Ponni rice, freshly milled and replenished every 15 days directly from regional paddy farms. Cooked to unmatched softness, non-sticky perfection, and backed by our 100% money-back satisfaction guarantee.
+          </p>
+          
+          <div class="annakili-highlights">
+            <ul class="highlight-list">
+              <li class="highlight-item">
+                <i class="fa-solid fa-circle-check"></i> Fresh mill stock every 15 days
+              </li>
+              <li class="highlight-item">
+                <i class="fa-solid fa-circle-check"></i> Convenient 1kg to 75kg bags
+              </li>
+              <li class="highlight-item">
+                <i class="fa-solid fa-circle-check"></i> 100% Satisfaction Guarantee
+              </li>
+              <li class="highlight-item">
+                <i class="fa-solid fa-circle-check"></i> Pure Kangayam Ponni paddy
+              </li>
+            </ul>
+          </div>
+
+          <div class="annakili-ctas">
+            <a href="shop.html?category=rice-grains&search=annakili" class="btn btn-primary">
+              <i class="fa-solid fa-cart-shopping"></i> Order ANNAKILI Rice
+            </a>
+            <a href="https://wa.me/919994258914?text=Hello%20Murugesh%20Maligai,%20I%20want%20to%20order%20ANNAKILI%20Rice%20bags" target="_blank" rel="noopener" class="btn btn-outline-green">
+              <i class="fa-brands fa-whatsapp"></i> Rice Order on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="annakili-img-container">
+          <div class="annakili-img-wrapper">
+            <img src="SHOP3.jpeg" alt="ANNAKILI Rice premium packaging and grains" class="annakili-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. OUR STORY & FOUNDER LEGACY SECTION
+       ========================================================================== -->
+  <section class="section-padding story-section" id="about">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-text">
+          <span class="badge badge-gold">50+ Years of Heritage</span>
+          <h2>Founded by Murugesh in 1970</h2>
+          <p class="story-lead">
+            Murugesh Maligai was established in 1970 by Mr. Murugesh. For over five decades and across three generations, we have been serving families in Annur and Coimbatore with wholesome food, pure provisions, and uncompromised integrity.
+          </p>
+          <p>
+            Our core mission has always remained simple: to make every customer happy by offering daily household necessities at honest wholesale rates, sourced directly from trusted millers and local farmers.
+          </p>
+          <p class="story-highlight">
+            <strong>🌿 Zero-Plastic Carry Bag Policy:</strong> To protect our environment and future generations, polythene carry-bags are strictly prohibited in our store. We warmly invite our customers to bring their own reusable cloth bags and join us in our green journey.
+          </p>
+        </div>
+
+        <!-- Founder Quote Card Box -->
+        <div class="story-quote-card">
+          <div class="founder-portrait-container">
+            <img src="images/founder.jpg" alt="Murugesh, Founder of Murugesh Maligai" width="260" height="260" onerror="this.parentNode.style.display='none';">
+          </div>
+          <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <blockquote>
+            "Our main goal is to make every customer happy, providing quality products at the most reasonable rates, so they leave with a whole heart."
+          </blockquote>
+          <cite>— Founder Murugesh</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. WHY CHOOSE US SECTION
+       ========================================================================== -->
+  <section class="section-padding why-section" id="why-choose-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-gold">Why Families Trust Us</span>
+        <h2>Why Annur Chooses Murugesh Maligai</h2>
+        <p>For more than half a century, our family-run store has been Coimbatore's trusted destination for uncompromised grocery purity.</p>
+      </div>
+
+      <div class="why-grid">
+        <!-- Card 1 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <h3>50+ Years of Trust</h3>
+          <p>Built on timeless values of honesty and purity, nourishing generations of families with the finest quality kitchen staples.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fa-solid fa-tags"></i>
+          </div>
+          <h3>Direct Wholesale Pricing</h3>
+          <p>By procuring directly from local farmers and authentic millers, we pass maximum savings directly to you with zero middlemen markup.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <h3>Express 15–30 Min Delivery</h3>
+          <p>Prompt doorstep delivery right across Annur and nearby communities so you never run out of daily cooking necessities.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <h3>100% Eco Friendly</h3>
+          <p>We say NO to single-use polythene bags to protect our farmland and environment. Reusable bags are celebrated.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. LOCATION & CONTACT SECTION
+       ========================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="contact-grid">
+      <!-- Left: Google Maps Frame -->
+      <div class="map-container">
+        <iframe 
+          src="https://maps.google.com/maps?q=Shri%20Aadhi%20Bhavan%20Nagammapudur%20Annur&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Murugesh Maligai Location Map">
+        </iframe>
+      </div>
+
+      <!-- Right: Contact Information Panel -->
+      <div class="contact-info-panel">
+        <h2>Visit Our Store Today</h2>
+        <ul class="contact-details">
+          <!-- Address -->
+          <li class="contact-item">
+            <div class="contact-item-icon">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <div class="contact-item-text">
+              <h4>Store Location</h4>
+              <p>Murugesh Maligai,<br>17/1 Avinashi Main Road,<br>Opposite Shri Aadhi Bhavan, Nagammapudur Post, Annur,<br>Coimbatore - 641653</p>
+            </div>
+          </li>
+          
+          <!-- Phone & WhatsApp -->
+          <li class="contact-item">
+            <div class="contact-item-icon">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="contact-item-text">
+              <h4>Call & WhatsApp Orders</h4>
+              <p><a href="tel:9994258914" style="font-weight: 700;">+91 99942 58914</a> (Karunainathan)</p>
+            </div>
+          </li>
+
+          <!-- Hours -->
+          <li class="contact-item">
+            <div class="contact-item-icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="contact-item-text">
+              <h4>Operating Hours</h4>
+              <p>Monday – Sunday: 6:00 AM – 10:00 PM (All 7 Days)</p>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Action Links -->
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Shri+Aadhi+Bhavan,+Nagammapudur,+Annur" target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+          </a>
+          <a href="https://wa.me/919994258914?text=Hello%20Murugesh%20Maligai,%20I%20have%20an%20inquiry" target="_blank" rel="noopener" class="btn btn-whatsapp-hero">
+            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. MODERN FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Heritage Bio -->
+        <div class="footer-col">
+          <div class="footer-logo">
+            Murugesh Maligai
+            <span>Est. 1970 • Coimbatore</span>
+          </div>
+          <p style="color: rgba(255, 255, 255, 0.7); line-height: 1.7; margin-bottom: 1.5rem;">
+            Annur's premier heritage grocery store. Family-owned and committed to fresh farm produce, pure dairy, eco-friendly zero-plastic policy, and signature ANNAKILI Ponni rice for over 50 years.
+          </p>
+          <div class="footer-socials">
+            <a href="https://wa.me/919994258914" class="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="tel:9994258914" class="social-icon" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:Karunainathan1972@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="shop.html">Shop 780+ Products</a></li>
+            <li><a href="#departments">Explore Departments</a></li>
+            <li><a href="#annakili">ANNAKILI Rice Guide</a></li>
+            <li><a href="#about">Our 50-Year Legacy</a></li>
+            <li><a href="#contact">Store Map & Timings</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contact Info -->
+        <div class="footer-col">
+          <h3>Store Info</h3>
+          <ul style="color: rgba(255, 255, 255, 0.75);">
+            <li style="margin-bottom: 0.8rem;">
+              <i class="fa-solid fa-location-dot" style="color: var(--color-highlight); margin-right: 8px;"></i>
+              17/1 Avinashi Main Road, Nagammapudur Post, Annur - 641653
+            </li>
+            <li style="margin-bottom: 0.8rem;">
+              <i class="fa-solid fa-phone" style="color: var(--color-highlight); margin-right: 8px;"></i>
+              +91 99942 58914
+            </li>
+            <li style="margin-bottom: 0.8rem;">
+              <i class="fa-solid fa-clock" style="color: var(--color-highlight); margin-right: 8px;"></i>
+              6:00 AM – 10:00 PM Daily
+            </li>
+            <li style="margin-bottom: 0.8rem;">
+              <i class="fa-solid fa-envelope" style="color: var(--color-highlight); margin-right: 8px;"></i>
+              <a href="mailto:Karunainathan1972@gmail.com">Karunainathan1972@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div class="footer-col">
+          <h3>Fresh Stock Alerts</h3>
+          <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 1rem;">Get notified whenever fresh mill rice batches and seasonal organic farm produce arrive.</p>
+          <form class="newsletter-form" action="#" onsubmit="event.preventDefault(); alert('Thank you! You will receive fresh stock updates.');">
+            <input type="email" placeholder="Your WhatsApp / Email" class="newsletter-input" required aria-label="Email Address">
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Murugesh Maligai. All rights reserved. Serving Annur with trust since 1970.</p>
+        <div class="footer-bottom-links">
+          <a href="shop.html">Shop Catalog</a>
+          <a href="tel:9994258914">Contact Us</a>
+          <a href="https://wa.me/919994258914">WhatsApp Order</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MOBILE NAVIGATION & CART BADGE SCRIPT
+       ========================================================================== -->
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // Toggle Mobile Menu
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', () => {
+        navToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      });
+
+      // Close mobile menu when a nav link is clicked
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          navToggle.classList.remove('active');
+          navMenu.classList.remove('active');
+        });
+      });
+    }
+
+    // Sticky Header Scroll Effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (!header) return;
+      if (window.scrollY > 50) {
+        header.style.padding = '0.6rem 0';
+        header.style.boxShadow = '0 5px 25px rgba(0, 0, 0, 0.1)';
+      } else {
+        header.style.padding = '0.75rem 0';
+        header.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.03)';
+      }
+    });
+
+    // Sync cart badge on bottom nav
+    window.addEventListener('DOMContentLoaded', () => {
+      try {
+        const savedCart = JSON.parse(localStorage.getItem('mm_cart')) || [];
+        const total = savedCart.reduce((sum, item) => sum + (item.quantity || 1), 0);
+        const badge = document.getElementById('mbNavCartBadge');
+        if (badge) {
+          if (total > 0) {
+            badge.textContent = total;
+            badge.style.display = 'flex';
+          } else {
+            badge.style.display = 'none';
+          }
+        }
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- MOBILE APP BOTTOM NAVIGATION BAR (Zepto/Blinkit Style) -->
+  <nav class="mobile-bottom-nav" id="mobileBottomNav">
+    <a href="index.html" class="mb-nav-item active">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+    <a href="shop.html" class="mb-nav-item">
+      <i class="fa-solid fa-layer-group"></i>
+      <span>Shop</span>
+    </a>
+    <a href="shop.html?focus=search" class="mb-nav-item">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <span>Search</span>
+    </a>
+    <a href="shop.html?open=cart" class="mb-nav-item">
+      <div class="mb-nav-cart-wrapper">
+        <i class="fa-solid fa-basket-shopping"></i>
+        <span class="mb-nav-cart-badge" id="mbNavCartBadge" style="display: none;">0</span>
+      </div>
+      <span>Cart</span>
+    </a>
+  </nav>
+
+  <!-- PWA Bottom Floating Install Banner -->
+  <div class="pwa-bottom-banner" id="pwaBanner">
+    <div class="pwa-banner-info">
+      <img src="images/icon-192.png" alt="Murugesh Maligai App Icon" class="pwa-banner-icon">
+      <div class="pwa-banner-text">
+        <h4>Murugesh Maligai App</h4>
+        <p>Install on home screen for 1-tap ordering</p>
+      </div>
+    </div>
+    <div class="pwa-banner-actions">
+      <button class="pwa-banner-install-btn" id="pwaBannerInstallBtn">Install</button>
+      <button class="pwa-banner-close" id="pwaBannerClose" aria-label="Dismiss banner">&times;</button>
+    </div>
+  </div>
+
+  <!-- PWA Service Worker Registration & Installation Script -->
+  <script>
+    let deferredPrompt;
+    const pwaInstallBtn = document.getElementById('pwaInstallBtn');
+    const pwaBanner = document.getElementById('pwaBanner');
+    const pwaBannerInstallBtn = document.getElementById('pwaBannerInstallBtn');
+    const pwaBannerClose = document.getElementById('pwaBannerClose');
+
+    // Register Service Worker (Auto-clears during local development so Live Server is always 100% real-time)
+    if ('serviceWorker' in navigator) {
+      if (location.hostname === '127.0.0.1' || location.hostname === 'localhost') {
+        navigator.serviceWorker.getRegistrations().then((registrations) => {
+          for (let registration of registrations) {
+            registration.unregister();
+          }
+        });
+        caches.keys().then((names) => {
+          for (let name of names) caches.delete(name);
+        });
+      } else {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js')
+            .then((reg) => console.log('Service Worker registered successfully:', reg.scope))
+            .catch((err) => console.warn('Service Worker registration failed:', err));
+        });
+      }
+    }
+
+    // Capture beforeinstallprompt event
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+
+      // Show header install button
+      if (pwaInstallBtn) {
+        pwaInstallBtn.style.display = 'inline-flex';
+      }
+
+      // Check if user has dismissed prompt recently in this session
+      if (!sessionStorage.getItem('pwa_dismissed') && pwaBanner) {
+        setTimeout(() => {
+          pwaBanner.classList.add('show');
+        }, 2500);
+      }
+    });
+
+    function triggerPwaInstall() {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            console.log('User accepted PWA installation');
+          }
+          deferredPrompt = null;
+          if (pwaBanner) pwaBanner.classList.remove('show');
+        });
+      } else {
+        alert("To install Murugesh Maligai App:\n\n• On Android (Chrome): Tap the 3 dots (⋮) at top-right and select 'Install app' or 'Add to Home screen'.\n• On iPhone (Safari): Tap the Share button (⎋) at the bottom and tap 'Add to Home Screen'.\n• On PC/Laptop: Click the Install icon in the right side of your address bar.");
+      }
+    }
+
+    if (pwaInstallBtn) {
+      pwaInstallBtn.addEventListener('click', triggerPwaInstall);
+    }
+    if (pwaBannerInstallBtn) {
+      pwaBannerInstallBtn.addEventListener('click', triggerPwaInstall);
+    }
+    if (pwaBannerClose) {
+      pwaBannerClose.addEventListener('click', () => {
+        if (pwaBanner) pwaBanner.classList.remove('show');
+        sessionStorage.setItem('pwa_dismissed', 'true');
+      });
+    }
+
+    window.addEventListener('appinstalled', () => {
+      console.log('Murugesh Maligai App installed successfully!');
+      if (pwaInstallBtn) pwaInstallBtn.style.display = 'none';
+      if (pwaBanner) pwaBanner.classList.remove('show');
+      deferredPrompt = null;
+    });
+  </script>
+
+</body>
+</html>

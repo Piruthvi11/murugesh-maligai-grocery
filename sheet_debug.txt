@@ -1,0 +1,44 @@
+bev-coffee,beverages,Filter Coffee Powder (காபி தூள்),90,200 g,,fa-mug-hot
+bev-tea,beverages,Assam Tea Powder (தேயிலை தூள்),75,250 g,,fa-mug-hot
+bev-3roses-tea-2rs,beverages,3 Roses Tea (3 ரோஸஸ் டீ தூள் - ₹2 Sachet),2,1 Sachet (₹2),images/3roses_tea.png,fa-mug-hot
+bev-3roses-tea-5rs,beverages,3 Roses Tea (3 ரோஸஸ் டீ தூள் - ₹5 Sachet),5,1 Sachet (₹5),images/3roses_tea.png,fa-mug-hot
+bev-3roses-tea-20rs,beverages,3 Roses Tea (3 ரோஸஸ் டீ தூள் - ₹20 Sachet),20,1 Sachet (₹20),images/3roses_tea.png,fa-mug-hot
+bev-3roses-tea-50g,beverages,3 Roses Tea (3 ரோஸஸ் டீ தூள் - 50g),43,50 g,images/3roses_tea.png,fa-mug-hot
+bev-3roses-tea-100g,beverages,3 Roses Tea (3 ரோஸஸ் டீ தூள் - 100g),90,100 g,images/3roses_tea.png,fa-mug-hot
+bev-3roses-tea-250g,beverages,3 Roses Tea (3 ரோஸஸ் டீ தூள் - 250g),225,250 g,images/3roses_tea.png,fa-mug-hot
+bev-3roses-tea-500g,beverages,3 Roses Tea (3 ரோஸஸ் டீ தூள் - 500g),339,500 g,images/3roses_tea.png,fa-mug-hot
+bev-3roses-natural-care-100g,beverages,3 Roses Natural Care Tea (3 ரோஸஸ் நேச்சுரல் கேர் டீ - 100g),98,100 g,images/3roses_natural_care.png,fa-mug-hot
+bev-3roses-natural-care-250g,beverages,3 Roses Natural Care Tea (3 ரோஸஸ் நேச்சுரல் கேர் டீ - 250g),240,250 g,images/3roses_natural_care.png,fa-mug-hot
+bev-avt-tea-10rs,beverages,AVT Premium Tea (AVT பிரீமியம் டீ தூள் - ₹10 Pack),10,1 Packet (₹10),images/avt_tea.png,fa-mug-hot
+bev-avt-tea-20rs,beverages,AVT Premium Tea (AVT பிரீமியம் டீ தூள் - ₹20 Pack),20,1 Packet (₹20),images/avt_tea.png,fa-mug-hot
+bev-avt-tea-100g,beverages,AVT Premium Tea (AVT பிரீமியம் டீ தூள் - 100g),40,100 g,images/avt_tea.png,fa-mug-hot
+bev-avt-tea-250g,beverages,AVT Premium Tea (AVT பிரீமியம் டீ தூள் - 250g),100,250 g,images/avt_tea.png,fa-mug-hot
+bev-avt-tea-500g,beverages,AVT Premium Tea (AVT பிரீமியம் டீ தூள் - 500g),185,500 g,images/avt_tea.png,fa-mug-hot
+bev-avt-tea-1kg,beverages,AVT Premium Tea (AVT பிரீமியம் டீ தூள் - 1 kg),286,1 kg,images/avt_tea.png,fa-mug-hot
+bev-chakra-gold-5rs,beverages,Chakra Gold Tea (சக்ரா கோல்ட் டீ தூள் - ₹5 Pack),5,1 Packet (₹5),images/chakra_gold_tea.png,fa-mug-hot
+bev-chakra-gold-10rs,beverages,Chakra Gold Tea (சக்ரா கோல்ட் டீ தூள் - ₹10 Pack),10,1 Packet (₹10),images/chakra_gold_tea.png,fa-mug-hot
+bev-chakra-gold-100g,beverages,Chakra Gold Tea (சக்ரா கோல்ட் டீ தூள் - 100g),90,100 g,images/chakra_gold_tea.png,fa-mug-hot
+bev-taj-mahal-100g,beverages,Taj Mahal Tea (தாஜ் மஹால் டீ தூள் - 100g),98,100 g,images/taj_mahal_tea.png,fa-mug-hot
+bev-taj-mahal-250g,beverages,Taj Mahal Tea (தாஜ் மஹால் டீ தூள் - 250g),225,250 g,images/taj_mahal_tea.png,fa-mug-hot
+bev-bru-coffee-2rs,beverages,Bru Instant Coffee (புரூ இன்ஸ்டன்ட் காபி - ₹2 Sachet),2,1 Sachet (₹2),images/bru_instant_coffee.png,fa-mug-hot
+bev-bru-coffee-3rs,beverages,Bru Instant Coffee (புரூ இன்ஸ்டன்ட் காபி - ₹3 Sachet),3,1 Sachet (₹3),images/bru_instant_coffee.png,fa-mug-hot
+bev-bru-coffee-5rs,beverages,Bru Instant Coffee (புரூ இன்ஸ்டன்ட் காபி - ₹5 Sachet),5,1 Sachet (₹5),images/bru_instant_coffee.png,fa-mug-hot
+bev-bru-coffee-10rs,beverages,Bru Instant Coffee (புரூ இன்ஸ்டன்ட் காபி - ₹10 Sachet),10,1 Sachet (₹10),images/bru_instant_coffee.png,fa-mug-hot
+bev-bru-coffee-200g,beverages,Bru Instant Coffee (புரூ இன்ஸ்டன்ட் காபி - 200g),230,200 g,images/bru_instant_coffee.png,fa-mug-hot
+bev-narasus-udhayam-50g,beverages,Narasu's Udhayam Filter Coffee (நரசுஸ் உதயம் காபி தூள் - 50g),88,50 g,images/narasus_udhayam_coffee.png,fa-mug-hot
+bev-sunrise-coffee-2rs,beverages,Sunrise Instant Coffee (சன்ரைஸ் காபி தூள் - ₹2 Sachet),2,1 Sachet (₹2),images/sunrise_coffee.png,fa-mug-hot
+bev-sunrise-coffee-5rs,beverages,Sunrise Instant Coffee (சன்ரைஸ் காபி தூள் - ₹5 Sachet),5,1 Sachet (₹5),images/sunrise_coffee.png,fa-mug-hot
+bev-sunrise-coffee-10rs,beverages,Sunrise Instant Coffee (சன்ரைஸ் காபி தூள் - ₹10 Sachet),10,1 Sachet (₹10),images/sunrise_coffee.png,fa-mug-hot
+bev-sunrise-coffee-50g,beverages,Sunrise Instant Coffee (சன்ரைஸ் காபி தூள் - 50g),90,50 g,images/sunrise_coffee.png,fa-mug-hot
+bev-sunrise-coffee-200g,beverages,Sunrise Instant Coffee (சன்ரைஸ் காபி தூள் - 200g),240,200 g,images/sunrise_coffee.png,fa-mug-hot
+bev-boost-5rs,beverages,Boost Health Drink (பூஸ்ட் ஹெல்த் டிரிங்க் - ₹5 Sachet),5,1 Sachet (₹5),images/boost_health_drink.png,fa-bolt
+bev-boost-200g,beverages,Boost Health Drink (பூஸ்ட் ஹெல்த் டிரிங்க் - 200g Refill),97,200 g (Refill),images/boost_health_drink.png,fa-bolt
+bev-boost-250g-jar,beverages,Boost Health Drink (பூஸ்ட் ஹெல்த் டிரிங்க் - 250g Jar),110,250 g (Jar),images/boost_health_drink.png,fa-bolt
+bev-boost-500g,beverages,Boost Health Drink (பூஸ்ட் ஹெல்த் டிரிங்க் - 500g Refill),235,500 g (Refill),images/boost_health_drink.png,fa-bolt
+bev-boost-500g-jar,beverages,Boost Health Drink (பூஸ்ட் ஹெல்த் டிரிங்க் - 500g Jar),250,500 g (Jar),images/boost_health_drink.png,fa-bolt
+bev-horlicks-5rs,beverages,Horlicks Classic Malt (ஹார்லிக்ஸ் - ₹5 Sachet),5,1 Sachet (₹5),images/horlicks_malt.png,fa-glass-water
+bev-horlicks-200g,beverages,Horlicks Classic Malt (ஹார்லிக்ஸ் - 200g Refill),87,200 g (Refill),images/horlicks_malt.png,fa-glass-water
+bev-horlicks-200g-jar,beverages,Horlicks Classic Malt (ஹார்லிக்ஸ் - 200g Jar),95,200 g (Jar),images/horlicks_malt.png,fa-glass-water
+bev-horlicks-500g,beverages,Horlicks Classic Malt (ஹார்லிக்ஸ் - 500g Refill),220,500 g (Refill),images/horlicks_malt.png,fa-glass-water
+bev-horlicks-500g-jar,beverages,Horlicks Classic Malt (ஹார்லிக்ஸ் - 500g Jar),230,500 g (Jar),images/horlicks_malt.png,fa-glass-water
+bev-complan-5rs,beverages,Complan Nutrition Drink (காம்பிளான் - ₹5 Sachet),5,1 Sachet (₹5),images/complan.png,fa-heart-pulse

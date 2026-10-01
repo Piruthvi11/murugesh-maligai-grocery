@@ -1,0 +1,39 @@
+ID	Category	Name	Price	Unit	Image	Icon	InStock
+stat-apsara-pencil-single	stationery	Apsara Extra Dark Pencil (அப்சரா பென்சில் - ₹5)	5	1 Pencil (₹5)	images/apsara_pencil.png	fa-pencil	TRUE
+stat-apsara-pencil-box	stationery	Apsara Extra Dark Pencil Box (அப்சரா பென்சில் பாக்ஸ் - 10 Pcs)	50	1 Box (10 Pencils - ₹50)	images/apsara_pencil_box.png	fa-pencil	TRUE
+stat-nataraj-pencil-single	stationery	Nataraj 621 Bold Pencil (நடராஜ் பென்சில் - ₹5)	5	1 Pencil (₹5)	images/nataraj_pencil.png	fa-pencil	TRUE
+stat-nataraj-pencil-box	stationery	Nataraj 621 Pencil Box (நடராஜ் பென்சில் பாக்ஸ் - 10 Pcs)	50	1 Box (10 Pencils - ₹50)	images/nataraj_pencil_box.png	fa-pencil	TRUE
+stat-doms-pencil-single	stationery	Doms Neon / Groove Pencil (டோம்ஸ் பென்சில் - ₹5)	5	1 Pencil (₹5)	images/doms_pencil.png	fa-pencil	TRUE
+stat-doms-pencil-box	stationery	Doms Pencil Box (டோம்ஸ் பென்சில் பாக்ஸ் - 10 Pcs)	50	1 Box (10 Pencils - ₹50)	images/doms_pencil_box.png	fa-pencil	TRUE
+stat-refill-pen-6rs	stationery	Ballpoint Refill Pen (ரீஃபில் பால்பாயிண்ட் பேனா - ₹6)	6	1 Pen (₹6)	images/refill_pen.png	fa-pen-clip	TRUE
+stat-ox-pen-10rs	stationery	OX Ball Pen (ஓஎக்ஸ் பால்பாயிண்ட் பேனா - ₹10)	10	1 Pen (₹10)	images/ox_pen.png	fa-pen-clip	TRUE
+stat-reynolds-pen-10rs	stationery	Reynolds Ballpoint Pen (ரெய்னால்ட்ஸ் பேனா - ₹10)	10	1 Pen (₹10)	images/reynolds_pen.png	fa-pen-clip	TRUE
+stat-montex-pen-10rs	stationery	Montex Gel / Ball Pen (மான்டெக்ஸ் பேனா - ₹10)	10	1 Pen (₹10)	images/montex_pen.png	fa-pen-clip	TRUE
+stat-ink-pen-45rs	stationery	Fountain Ink Pen (மை பேனா / இங்க் பேனா - ₹45)	45	1 Pen (₹45)	images/ink_pen.png	fa-pen-nib	TRUE
+stat-nataraj-eraser-3rs	stationery	Nataraj Plasto Eraser (நடராஜ் அழிப்பான் - ₹3)	3	1 Small Eraser (₹3)	images/nataraj_eraser.png	fa-eraser	TRUE
+stat-nataraj-eraser-5rs	stationery	Nataraj Plasto Eraser (நடராஜ் அழிப்பான் - ₹5)	5	1 Big Eraser (₹5)	images/nataraj_eraser.png	fa-eraser	TRUE
+stat-apsara-eraser-3rs	stationery	Apsara Non-Dust Eraser (அப்சரா அழிப்பான் - ₹3)	3	1 Small Eraser (₹3)	images/apsara_eraser.png	fa-eraser	TRUE
+stat-apsara-eraser-5rs	stationery	Apsara Non-Dust Eraser (அப்சரா அழிப்பான் - ₹5)	5	1 Big Eraser (₹5)	images/apsara_eraser.png	fa-eraser	TRUE
+stat-sharpener-5rs	stationery	Pencil Sharpener (பென்சில் சீவி / ஷார்ப்னர் - ₹5)	5	1 Sharpener (₹5)	images/pencil_sharpener.png	fa-shapes	TRUE
+stat-small-note-tamil-20rs	stationery	Small Notebook - Tamil 2-Line (தமிழ் நோட்டு 80 பக்கங்கள் - ₹20)	20	80 Pages (2-Line - ₹20)	images/small_notebook.png	fa-book-open	TRUE
+stat-small-note-english-20rs	stationery	Small Notebook - English 4-Line (ஆங்கிலம் நோட்டு 80 பக்கங்கள் - ₹20)	20	80 Pages (4-Line - ₹20)	images/small_notebook.png	fa-book-open	TRUE
+stat-small-note-maths-20rs	stationery	Small Notebook - Maths Square (கணக்கு கட்ட நோட்டு 80 பக்கங்கள் - ₹20)	20	80 Pages (Square - ₹20)	images/small_notebook.png	fa-book-open	TRUE
+stat-small-note-ruled-20rs	stationery	Small Notebook - Single Ruled (கோடு போட்ட நோட்டு 80 பக்கங்கள் - ₹20)	20	80 Pages (Single Ruled - ₹20)	images/small_notebook.png	fa-book-open	TRUE
+stat-small-note-unruled-20rs	stationery	Small Notebook - Unruled (வெள்ளை நோட்டு 80 பக்கங்கள் - ₹20)	20	80 Pages (Unruled - ₹20)	images/small_notebook.png	fa-book-open	TRUE
+stat-long-note-ruled-45rs	stationery	Long Size Notebook - Single Ruled (லாங் நோட்டு கோடு போட்டது - ₹45)	45	1 Long Notebook (Ruled - ₹45)	images/long_notebook.png	fa-book-open	TRUE
+stat-long-note-unruled-45rs	stationery	Long Size Notebook - Unruled (லாங் நோட்டு வெள்ளை - ₹45)	45	1 Long Notebook (Unruled - ₹45)	images/long_notebook.png	fa-book-open	TRUE
+stat-chart-paper-6rs	stationery	Multicolor Chart Paper (வண்ண சார்ட் பேப்பர் - ₹6)	6	1 Sheet (₹6)	images/chart_paper.png	fa-note-sticky	TRUE
+stat-fevicol-5rs	stationery	Fevicol MR Squeeze Bottle (ஃபெவிகால் பசை - ₹5)	5	1 Squeeze Pack (₹5)	images/fevicol_glue.png	fa-paste	TRUE
+stat-fevicol-10rs	stationery	Fevicol MR Squeeze Bottle (ஃபெவிகால் பசை - ₹10)	10	1 Bottle (₹10)	images/fevicol_glue.png	fa-paste	TRUE
+stat-fevistick-5rs	stationery	Fevi Stik Super Glue Stick (ஃபெவிஸ்டிக் பசை - ₹5)	5	1 Stick (₹5)	images/fevistick.png	fa-paste	TRUE
+stat-fevikwik-5rs	stationery	Fevikwik Instant Adhesive (ஃபெவிக்விக் - ₹5)	5	1 Tube (₹5)	images/fevistick.png	fa-paste	TRUE
+stat-anabond-5rs	stationery	Anabond Super Glue / Quick Fix (அனபான்ட் பசை - ₹5)	5	1 Tube (₹5)	images/anabond_glue.png	fa-paste	TRUE
+stat-liquid-gum-5rs	stationery	Office Liquid Gum / Glue (கம் பாட்டில் - ₹5)	5	1 Bottle (₹5)	images/liquid_gum.png	fa-paste	TRUE
+stat-scale-15cm-5rs	stationery	Plastic Ruler / Scale 15cm (சின்ன ஸ்கேல் 15cm - ₹5)	5	1 Scale (15 cm - ₹5)	images/plastic_scale.png	fa-ruler	TRUE
+stat-scale-30cm-10rs	stationery	Plastic Ruler / Scale 30cm (பெரிய ஸ்கேல் 30cm - ₹10)	10	1 Scale (30 cm - ₹10)	images/plastic_scale.png	fa-ruler	TRUE
+stat-crayons-10rs	stationery	Wax Crayons Color Set (மெழுகு வண்ண கிரையான்ஸ் - ₹10)	10	1 Pack (₹10)	images/crayons_set.png	fa-palette	TRUE
+stat-color-pencils-20rs	stationery	Color Pencils Set (வண்ண பென்சில்கள் - ₹20)	20	1 Pack (₹20)	images/color_pencils.png	fa-palette	TRUE
+stat-sketch-pens-20rs	stationery	Sketch Pens Color Set (ஸ்கெட்ச் பேனாக்கள் - ₹20)	20	1 Pack (₹20)	images/sketch_pens.png	fa-palette	TRUE
+stat-a4-sheets-10rs	stationery	A4 White Paper Sheets Pack (ஏ4 வெள்ளை பேப்பர் கட்டு)	10	1 Pack (10 Sheets - ₹10)	images/a4_sheets.png	fa-file-lines	TRUE
+stat-ruled-paper-10rs	stationery	Ruled Exam Paper Sheets (கோடு போட்ட பேப்பர் கட்டு)	10	1 Pack (Ruled Sheets - ₹10)	images/ruled_paper.png	fa-file-lines	TRUE
+stat-unruled-paper-10rs	stationery	Unruled White Paper Sheets (வெள்ளை தாள் பேப்பர் கட்டு)	10	1 Pack (Unruled Sheets - ₹10)	images/unruled_paper.png	fa-file-lines	TRUE

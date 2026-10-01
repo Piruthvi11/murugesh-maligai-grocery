@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse our catalog at Murugesh Maligai and build your grocery list. Shop farm-fresh vegetables, organic grains, and ANNAKILI Rice, and send your order via WhatsApp.">
+  <title>Shop Catalog | Murugesh Maligai</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#15803d">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Razorpay Web Checkout SDK -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       STICKY HEADER
+       ========================================================================== -->
+  <header class="main-header" id="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        Murugesh Maligai
+        <span class="logo-sub">Est. 1970</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html#home" class="nav-link">Home</a></li>
+          <li><a href="index.html#categories" class="nav-link active">Shop</a></li>
+          <li><a href="index.html#annakili" class="nav-link">ANNAKILI</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Install App Button -->
+        <button class="pwa-install-btn" id="pwaInstallBtn">
+          <i class="fa-solid fa-download"></i>
+          <span>Install App</span>
+        </button>
+
+        <a href="tel:9994258914" class="header-contact-btn">
+          <i class="fa-solid fa-phone"></i>
+          <span>9994258914</span>
+        </a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Top Delivery & Purity Ticker -->
+  <div class="store-ticker-bar">
+    <div class="container ticker-flex">
+      <span><i class="fa-solid fa-bolt" style="color: #fde047;"></i> <strong>15-30 Min Delivery in Annur</strong></span>
+      <span class="ticker-divider">•</span>
+      <span><i class="fa-solid fa-leaf" style="color: #86efac;"></i> 100% Pure & Fresh Daily</span>
+      <span class="ticker-divider">•</span>
+      <span><i class="fa-solid fa-shield-heart" style="color: #fde047;"></i> 50+ Years Trust (Est. 1970)</span>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       CATALOG CONTROLS & GRID
+       ========================================================================== -->
+  <main class="section-padding" style="background-color: var(--color-bg-cream); min-height: 100vh; padding-top: 1.5rem;">
+    <div class="container">
+      
+      <!-- Visual Quick-Commerce Promo Banners Slider -->
+      <div class="promo-banners-slider">
+        <div class="promo-card promo-annakili" onclick="filterByPromo('rice-grains')">
+          <div class="promo-badge">⭐ Signature Rice</div>
+          <h3>ANNAKILI Ponni Rice</h3>
+          <p>Freshly milled & direct from Kangayam farms</p>
+          <span class="promo-btn">Shop Rice <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+        <div class="promo-card promo-delivery" onclick="filterByPromo('vegetables')">
+          <div class="promo-badge">⚡ Annur Express</div>
+          <h3>Farm-Fresh Vegetables</h3>
+          <p>Delivered fresh to your door in 30 mins</p>
+          <span class="promo-btn">Shop Veggies <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+        <div class="promo-card promo-dairy" onclick="filterByPromo('dairy')">
+          <div class="promo-badge">🥛 Daily Morning</div>
+          <h3>Fresh Milk & Dairy</h3>
+          <p>Aavin Milk, Pure Ghee, Curd & Paneer</p>
+          <span class="promo-btn">Shop Dairy <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+        <div class="promo-card promo-pooja" onclick="filterByPromo('devotional')">
+          <div class="promo-badge">🪔 Sacred Essentials</div>
+          <h3>Pooja & Devotional</h3>
+          <p>Pure Camphor, Incense & Lighting Ghee</p>
+          <span class="promo-btn">Shop Pooja <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </div>
+
+      <!-- Universal Instant Search Bar -->
+      <div class="search-bar-wrapper">
+        <div style="display: flex; align-items: center; background: #FFFFFF; border: 2px solid var(--color-primary); border-radius: 50px; padding: 0.65rem 1.3rem; box-shadow: 0 4px 15px rgba(21, 128, 61, 0.1); transition: all 0.3s ease;">
+          <i class="fa-solid fa-magnifying-glass" style="color: var(--color-primary); font-size: 1.15rem; margin-right: 0.8rem;"></i>
+          <input type="text" id="storeSearchInput" placeholder="Search any product in English or தமிழ் (e.g. Milk, Tea, Sakthi, பிஸ்கட், எண்ணெய்)..." style="width: 100%; border: none; outline: none; font-family: var(--font-body); font-size: 0.95rem; color: var(--color-text-dark); background: transparent;" autocomplete="off">
+          <button id="clearSearchBtn" style="display: none; background: #F0F2F5; border: none; color: #666; border-radius: 50%; width: 26px; height: 26px; align-items: center; justify-content: center; cursor: pointer; font-size: 1rem; line-height: 1;" title="Clear search">&times;</button>
+        </div>
+        <div id="searchStatsBar" style="display: none; font-size: 0.88rem; color: var(--color-primary); margin-top: 0.6rem; text-align: center; font-weight: 600;">
+          <span id="searchStatsText">Found 0 items</span> &bull; <a href="javascript:void(0)" id="resetSearchLink" style="color: #D48806; text-decoration: underline; cursor: pointer;">Clear search & view categories</a>
+        </div>
+      </div>
+
+      <!-- Quick Category Story Bubbles -->
+      <div class="category-bubbles-wrapper">
+        <div class="category-bubble-item" onclick="selectCategoryBubble('all')">
+          <div class="bubble-icon-box bubble-all"><i class="fa-solid fa-shapes"></i></div>
+          <span>All Items</span>
+        </div>
+        <div class="category-bubble-item" onclick="selectCategoryBubble('vegetables')">
+          <div class="bubble-icon-box bubble-veg"><i class="fa-solid fa-carrot"></i></div>
+          <span>Vegetables</span>
+        </div>
+        <div class="category-bubble-item" onclick="selectCategoryBubble('dairy')">
+          <div class="bubble-icon-box bubble-dairy"><i class="fa-solid fa-cow"></i></div>
+          <span>Dairy</span>
+        </div>
+        <div class="category-bubble-item" onclick="selectCategoryBubble('rice-grains')">
+          <div class="bubble-icon-box bubble-rice"><i class="fa-solid fa-wheat-awn"></i></div>
+          <span>Rice</span>
+        </div>
+        <div class="category-bubble-item" onclick="selectCategoryBubble('oils-fats')">
+          <div class="bubble-icon-box bubble-oil"><i class="fa-solid fa-jar-wheat"></i></div>
+          <span>Oils & Ghee</span>
+        </div>
+        <div class="category-bubble-item" onclick="selectCategoryBubble('spices')">
+          <div class="bubble-icon-box bubble-spices"><i class="fa-solid fa-pepper-hot"></i></div>
+          <span>Spices</span>
+        </div>
+        <div class="category-bubble-item" onclick="selectCategoryBubble('snacks')">
+          <div class="bubble-icon-box bubble-snacks"><i class="fa-solid fa-cookie-bite"></i></div>
+          <span>Snacks</span>
+        </div>
+        <div class="category-bubble-item" onclick="selectCategoryBubble('devotional')">
+          <div class="bubble-icon-box bubble-pooja"><i class="fa-solid fa-hands-praying"></i></div>
+          <span>Pooja</span>
+        </div>
+        <div class="category-bubble-item" onclick="selectCategoryBubble('personal-care')">
+          <div class="bubble-icon-box bubble-care"><i class="fa-solid fa-soap"></i></div>
+          <span>Care</span>
+        </div>
+      </div>
+
+      <!-- Categories Filter Tabs -->
+      <div class="catalog-tabs-container">
+        <div class="catalog-tabs" id="catalogTabs">
+          <button class="tab-btn active" data-category="all">All Items</button>
+          <button class="tab-btn" data-category="vegetables"><i class="fa-solid fa-carrot tab-icon"></i> Vegetables</button>
+          <button class="tab-btn" data-category="dairy"><i class="fa-solid fa-cow tab-icon"></i> Dairy</button>
+          <button class="tab-btn" data-category="rice-grains"><i class="fa-solid fa-wheat-awn tab-icon"></i> Rice & Grains</button>
+          <button class="tab-btn" data-category="oils-fats"><i class="fa-solid fa-jar-wheat tab-icon"></i> Oils & Fats</button>
+          <button class="tab-btn" data-category="flours"><i class="fa-solid fa-mortar-pestle tab-icon"></i> Flours</button>
+          <button class="tab-btn" data-category="sweeteners"><i class="fa-solid fa-cubes-stacked tab-icon"></i> Sweeteners & Basics</button>
+          <button class="tab-btn" data-category="pulses-dals"><i class="fa-solid fa-seedling tab-icon"></i> Pulses & Dals</button>
+          <button class="tab-btn" data-category="spices"><i class="fa-solid fa-pepper-hot tab-icon"></i> Whole Spices</button>
+          <button class="tab-btn" data-category="masalas"><i class="fa-solid fa-mortar-pestle tab-icon"></i> Masala Powders</button>
+          <button class="tab-btn" data-category="beverages"><i class="fa-solid fa-mug-hot tab-icon"></i> Beverages</button>
+          <button class="tab-btn" data-category="bakery"><i class="fa-solid fa-bread-slice tab-icon"></i> Bakery</button>
+          <button class="tab-btn" data-category="snacks"><i class="fa-solid fa-cookie-bite tab-icon"></i> Snacks</button>
+          <button class="tab-btn" data-category="personal-care"><i class="fa-solid fa-soap tab-icon"></i> Personal Care</button>
+          <button class="tab-btn" data-category="household"><i class="fa-solid fa-spray-can-sparkles tab-icon"></i> Cleaning</button>
+          <button class="tab-btn" data-category="devotional"><i class="fa-solid fa-hands-praying tab-icon"></i> Pooja Items</button>
+          <button class="tab-btn" data-category="stationery"><i class="fa-solid fa-pen-ruler tab-icon"></i> Stationery</button>
+          <button class="tab-btn" data-category="ingredients"><i class="fa-solid fa-bowl-rice tab-icon"></i> Ingredients</button>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid" id="productGrid">
+        <!-- Products dynamically rendered here -->
+      </div>
+    </div>
+  </main>
+
+  <!-- FLOATING CART BUTTON (Desktop) -->
+  <div class="floating-cart" id="floatingCart">
+    <i class="fa-solid fa-clipboard-list"></i>
+    <span class="cart-badge" id="cartBadge">0</span>
+  </div>
+
+  <!-- STICKY MOBILE BOTTOM CHECKOUT BAR (Mobile) -->
+  <div class="mobile-bottom-cart-bar" id="mobileBottomCartBar" onclick="openCart()">
+    <div class="mb-cart-info">
+      <span class="mb-cart-count" id="mbCartCount">0 Items</span>
+      <span class="mb-cart-total" id="mbCartTotal">₹0</span>
+    </div>
+    <div class="mb-cart-btn">
+      <span>View Cart & Pay</span>
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
+  </div>
+
+  <!-- MOBILE APP BOTTOM NAVIGATION BAR (Zepto/Blinkit Style) -->
+  <nav class="mobile-bottom-nav" id="mobileBottomNav">
+    <a href="index.html" class="mb-nav-item">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+    <a href="shop.html" class="mb-nav-item active">
+      <i class="fa-solid fa-layer-group"></i>
+      <span>Shop</span>
+    </a>
+    <button type="button" class="mb-nav-item" onclick="focusSearchInput()">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <span>Search</span>
+    </button>
+    <button type="button" class="mb-nav-item" onclick="openCart()">
+      <div class="mb-nav-cart-wrapper">
+        <i class="fa-solid fa-basket-shopping"></i>
+        <span class="mb-nav-cart-badge" id="mbNavCartBadge">0</span>
+      </div>
+      <span>Cart</span>
+    </button>
+  </nav>
+
+  <!-- ==========================================================================
+       CART SIDEBAR DRAWER
+       ========================================================================== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <button class="back-cart-btn" id="backCartBtn" style="background: none; border: none; color: #ffffff; font-size: 1.15rem; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 4px;" title="Back to Shopping">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <h3><i class="fa-solid fa-clipboard-list"></i> Your Order List</h3>
+      </div>
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <button type="button" id="clearCartBtn" style="background: rgba(255, 255, 255, 0.18); border: 1px solid rgba(255, 255, 255, 0.35); color: #ffffff; font-size: 0.78rem; font-weight: 600; padding: 0.35rem 0.7rem; border-radius: 6px; cursor: pointer; display: flex; align-items: center; gap: 5px; transition: all 0.2s ease;">
+          <i class="fa-solid fa-trash-can"></i> Clear All
+        </button>
+        <button class="close-cart-btn" id="closeCartBtn" aria-label="Close cart">&times;</button>
+      </div>
+    </div>
+    
+    <!-- Scrollable Cart Content Area -->
+    <div class="cart-body-scroll" style="flex-grow: 1; overflow-y: auto; display: flex; flex-direction: column;">
+      <div class="cart-items-container" id="cartItemsContainer">
+        <!-- Cart items dynamically rendered here -->
+        <div class="empty-cart-message">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <p>Your order list is empty. Add some fresh groceries to get started!</p>
+        </div>
+      </div>
+
+      <!-- Checkout Form (appears when cart is not empty) -->
+      <div class="cart-checkout-form-container" id="cartCheckoutFormContainer" style="display: none; padding: 1rem 1.5rem; border-top: 1px solid var(--color-border);">
+        <h4 style="margin-bottom: 1rem; font-family: var(--font-body); font-size: 1rem; color: var(--color-primary); font-weight: 600;">
+          <i class="fa-solid fa-user-pen"></i> Delivery & Contact Info
+        </h4>
+        <div class="form-group" style="margin-bottom: 0.8rem;">
+          <label for="custName" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem;">Your Name *</label>
+          <input type="text" id="custName" placeholder="Enter your name" style="width: 100%; padding: 0.6rem 0.8rem; border: 1px solid var(--color-border); border-radius: 6px; font-family: var(--font-body); font-size: 0.9rem;" required>
+        </div>
+        <div class="form-group" style="margin-bottom: 0.8rem;">
+          <label for="custPhone" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem;">WhatsApp Phone Number *</label>
+          <input type="tel" id="custPhone" placeholder="Enter 10-digit mobile number" style="width: 100%; padding: 0.6rem 0.8rem; border: 1px solid var(--color-border); border-radius: 6px; font-family: var(--font-body); font-size: 0.9rem;" required>
+        </div>
+        <div class="form-group" style="margin-bottom: 0.8rem;">
+          <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem;">Order Preference *</label>
+          <div style="display: flex; gap: 15px;">
+            <label style="display: inline-flex; align-items: center; gap: 5px; font-size: 0.9rem; cursor: pointer;">
+              <input type="radio" name="orderType" value="pickup" checked style="cursor: pointer;"> Store Pickup
+            </label>
+            <label style="display: inline-flex; align-items: center; gap: 5px; font-size: 0.9rem; cursor: pointer;">
+              <input type="radio" name="orderType" value="delivery" style="cursor: pointer;"> Home Delivery
+            </label>
+          </div>
+        </div>
+        <div class="form-group" id="addressGroup" style="margin-bottom: 0.8rem; display: none;">
+          <label for="custAddress" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem;">Delivery Address *</label>
+          <textarea id="custAddress" rows="2" placeholder="House No, Street Name, Area in Annur" style="width: 100%; padding: 0.6rem 0.8rem; border: 1px solid var(--color-border); border-radius: 6px; font-family: var(--font-body); font-size: 0.9rem; resize: vertical;"></textarea>
+        </div>
+        <!-- Payment Method Selection -->
+        <div class="form-group" style="margin-bottom: 0.8rem;">
+          <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem;">Payment Method *</label>
+          <div style="display: flex; gap: 15px; margin-bottom: 0.5rem;">
+            <label style="display: inline-flex; align-items: center; gap: 5px; font-size: 0.9rem; cursor: pointer;">
+              <input type="radio" name="paymentType" value="cod" checked style="cursor: pointer;"> Cash on Delivery (COD)
+            </label>
+            <label style="display: inline-flex; align-items: center; gap: 5px; font-size: 0.9rem; cursor: pointer;">
+              <input type="radio" name="paymentType" value="upi" style="cursor: pointer;"> Pay Online (GPay/UPI)
+            </label>
+          </div>
+        </div>
+        <!-- Dynamic UPI QR Code Box -->
+        <div id="upiNote" style="display: none; background-color: rgba(212, 165, 116, 0.06); border: 1.5px dashed var(--color-highlight); padding: 1rem; border-radius: 12px; text-align: center; margin-bottom: 0.8rem;">
+          <p style="font-size: 0.85rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--color-primary-dark); font-family: var(--font-body);">
+            Scan QR to Pay via GPay / PhonePe
+          </p>
+          <div id="upiQrContainer" style="margin: 0.6rem 0;">
+            <!-- Dynamic QR image will be loaded here -->
+          </div>
+          <p style="font-size: 0.75rem; color: var(--color-text-muted); line-height: 1.4; margin-bottom: 0.6rem;">
+            Scan with GPay, PhonePe, or Paytm app. After paying, enter your 12-digit UPI Reference No below!
+          </p>
+          <a id="mobileUpiLink" href="#" style="display: none; background-color: var(--color-primary); color: #FFFFFF; text-decoration: none; padding: 0.6rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 600; align-items: center; justify-content: center; gap: 6px; margin: 0.5rem auto 0.8rem; box-shadow: 0 4px 10px rgba(27, 106, 74, 0.15);">
+            <i class="fa-solid fa-mobile-screen-button"></i> Pay via UPI App Directly
+          </a>
+          <div style="text-align: left; margin-top: 0.8rem; border-top: 1px dashed var(--color-border); padding-top: 0.8rem;">
+            <label for="custUtr" style="display: block; font-size: 0.8rem; font-weight: 700; margin-bottom: 0.3rem; color: var(--color-primary-dark);">
+              UPI Ref / UTR / Transaction ID (12 digits) *
+            </label>
+            <input type="text" id="custUtr" placeholder="e.g. 424512345678 (from GPay / PhonePe receipt)" maxlength="30" style="width: 100%; padding: 0.55rem 0.75rem; border: 1.5px solid var(--color-primary); border-radius: 6px; font-family: var(--font-body); font-size: 0.85rem; background: #FFFFFF;">
+            <span style="font-size: 0.72rem; color: var(--color-text-muted); display: block; margin-top: 0.25rem; line-height: 1.3;">
+              <i class="fa-solid fa-circle-info"></i> Enter the 12-digit UPI Ref / UTR number from your GPay/PhonePe payment receipt so the shopkeeper can verify your payment.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-footer" id="cartFooter" style="display: none;">
+      <div class="cart-total-row">
+        <span>Estimated Total:</span>
+        <span class="cart-total-price" id="cartTotalPrice">₹0</span>
+      </div>
+      <div style="display: flex; gap: 0.65rem; margin-top: 0.85rem;">
+        <button type="button" id="cancelOrderBtn" style="flex: 1; background: #F1F5F9; color: #475569; border: 1.5px solid #CBD5E1; padding: 0.75rem 0.5rem; border-radius: 50px; font-weight: 600; font-size: 0.85rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px;">
+          <i class="fa-solid fa-arrow-left"></i> Cancel
+        </button>
+        <button class="btn btn-primary btn-checkout" id="whatsappCheckoutBtn" style="flex: 2; margin-top: 0; justify-content: center;">
+          Order via WhatsApp <i class="fa-brands fa-whatsapp btn-icon"></i>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Order Confirmation Modal -->
+  <div class="modal-overlay" id="confirmModalOverlay" style="display: none;">
+    <div class="confirm-modal">
+      <div class="success-checkmark">
+        <div class="check-icon">
+          <span class="icon-line line-tip"></span>
+          <span class="icon-line line-long"></span>
+          <div class="icon-circle"></div>
+          <div class="icon-fix"></div>
+        </div>
+      </div>
+      <h3 id="modalTitle">Order Placed!</h3>
+      <p class="confirm-modal-lead" id="modalSubtitle">Thank you for shopping at Murugesh Maligai.</p>
+      <div class="confirm-modal-details">
+        <p><span>Total Amount:</span> <strong id="modalTotal">₹0</strong></p>
+        <p><span>Payment Status:</span> <strong id="modalPayment">Cash on Delivery</strong></p>
+        <p id="modalUtrRow" style="display: none;"><span>UPI Ref No:</span> <strong id="modalUtr">--</strong></p>
+      </div>
+      <p id="modalVerificationNote" style="display: none; font-size: 0.78rem; color: #8C6D23; background: #FFFBE6; border: 1px solid #FFE58F; border-radius: 8px; padding: 0.6rem 0.8rem; margin: 0.8rem 0; text-align: left; line-height: 1.35;">
+        <i class="fa-solid fa-circle-info"></i> <strong>Note:</strong> Payment status is <em>Verification Pending</em>. The shopkeeper will confirm credit in GPay/Bank before packing.
+      </p>
+      <p class="redirect-countdown" id="redirectCountdown">Opening WhatsApp in 20 seconds...</p>
+      
+      <div style="display: flex; flex-direction: column; gap: 0.65rem; margin-top: 1.25rem;">
+        <button class="btn btn-primary" id="modalWhatsAppBtn" style="width: 100%; justify-content: center; gap: 8px; border-radius: 50px;">
+          Send Order on WhatsApp <i class="fa-brands fa-whatsapp btn-icon"></i>
+        </button>
+        <button type="button" id="modalPrintBillBtn" style="background: #F8FAFC; color: #1E293B; border: 1.5px solid #CBD5E1; padding: 0.65rem 1rem; border-radius: 50px; font-weight: 600; font-size: 0.88rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s ease;">
+          <i class="fa-solid fa-print" style="color: var(--color-primary);"></i> Print / Download Bill Receipt
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom UPI Warning & Guide Modal -->
+  <div class="modal-overlay" id="utrWarningModalOverlay" style="display: none; z-index: 10000;">
+    <div class="confirm-modal" style="max-width: 420px; text-align: center;">
+      <div style="width: 65px; height: 65px; background: rgba(212, 136, 6, 0.12); color: #D48806; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.8rem; margin-bottom: 0.8rem;">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+      </div>
+      <h3 style="font-size: 1.3rem; color: var(--color-primary-dark); margin-bottom: 0.4rem;">UPI Ref No. Required</h3>
+      <p class="confirm-modal-lead" style="font-size: 0.88rem; margin-bottom: 1rem; color: var(--color-text-muted);" id="utrWarningMsg">
+        Please complete the payment by scanning the QR code and enter your 12-digit UPI Reference Number from your payment receipt.
+      </p>
+
+      <div style="background-color: var(--color-bg-cream); border-radius: 12px; padding: 0.9rem 1rem; text-align: left; font-size: 0.82rem; border: 1px solid var(--color-border); margin-bottom: 1.2rem; line-height: 1.5;">
+        <strong style="display: block; color: var(--color-primary-dark); margin-bottom: 0.4rem; font-size: 0.85rem;">
+          <i class="fa-solid fa-magnifying-glass"></i> Where to find your 12-digit ID:
+        </strong>
+        <ul style="margin: 0; padding-left: 1.2rem; color: var(--color-text-muted);">
+          <li><strong>Google Pay:</strong> Look for <em>"UPI transaction ID"</em></li>
+          <li><strong>PhonePe:</strong> Look for <em>"UTR"</em> or <em>"Transaction ID"</em></li>
+          <li><strong>Paytm:</strong> Look for <em>"UPI Ref No."</em></li>
+        </ul>
+      </div>
+
+      <button class="btn btn-primary" id="closeUtrWarningBtn" style="width: 100%; justify-content: center; border-radius: 50px; font-weight: 600;">
+        Enter Correct Ref No.
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SCRIPTS
+       ========================================================================== -->
+  <script src="products.js"></script>
+  <script>
+    // Config Variables
+    const SPREADSHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTE_G-64Klc9ko42_6-QGEo_XWaBRa8mtwDTyxf83pCGl0neNNGWS97mkyT4PmmnUNPiaMAEyYu66KK/pub?output=csv"; // Enter your public Google Sheet URL here for live sync
+    const SHOP_UPI_ID = "murugeshmaligai@ybl"; // Enter your shop UPI ID (GPay/PhonePe/Paytm) here
+    const RAZORPAY_KEY_ID = "rzp_test_placeholder"; // Enter your Razorpay Key ID here (e.g. rzp_test_xxxxxx) to enable on-site payment popup
+
+    // Global Cart & Products State
+    let cart = JSON.parse(localStorage.getItem('mm_cart')) || [];
+    let activeProducts = [];
+
+    // CSV Parser function to safely parse CSV rows and handle cells with quotes
+    function parseCSV(csvText) {
+      const lines = [];
+      const rows = csvText.split(/\r?\n/);
+      
+      for (let i = 0; i < rows.length; i++) {
+        const rowText = rows[i].trim();
+        if (!rowText) continue;
+        
+        const cells = [];
+        let insideQuote = false;
+        let currentCell = '';
+        
+        for (let j = 0; j < rowText.length; j++) {
+          const char = rowText[j];
+          
+          if (char === '"') {
+            insideQuote = !insideQuote;
+          } else if (char === ',' && !insideQuote) {
+            cells.push(currentCell.trim().replace(/^"|"$/g, ''));
+            currentCell = '';
+          } else {
+            currentCell += char;
+          }
+        }
+        cells.push(currentCell.trim().replace(/^"|"$/g, ''));
+        lines.push(cells);
+      }
+      return lines;
+    }
+
+    // Google Sheets Data Fetcher
+    async function loadProducts() {
+      // Initialize with our complete local products catalog from products.js (with 100% real images)
+      let combinedProducts = products.map(p => ({ ...p }));
+
+      if (!SPREADSHEET_URL) {
+        console.log("No Google Sheet URL configured. Loading local database.");
+        return combinedProducts;
+      }
+      
+      try {
+        const cacheBustUrl = SPREADSHEET_URL + (SPREADSHEET_URL.includes('?') ? '&' : '?') + '_t=' + Date.now();
+        const response = await fetch(cacheBustUrl, { cache: 'no-store' });
+        if (!response.ok) throw new Error("Spreadsheet response was not ok");
+        const csvText = await response.text();
+        const parsedData = parseCSV(csvText);
+        
+        if (parsedData.length < 2) return combinedProducts;
+        
+        const sheetHeaders = parsedData[0].map(h => h.trim().toLowerCase());
+        const idIdx = sheetHeaders.indexOf('id');
+        const catIdx = sheetHeaders.indexOf('category');
+        const nameIdx = sheetHeaders.indexOf('name');
+        const priceIdx = sheetHeaders.indexOf('price');
+        const unitIdx = sheetHeaders.indexOf('unit');
+        const imgIdx = sheetHeaders.indexOf('image');
+        const iconIdx = sheetHeaders.indexOf('icon');
+        
+        if (idIdx === -1 || catIdx === -1 || nameIdx === -1 || priceIdx === -1 || unitIdx === -1) {
+          console.warn("Google Sheet is missing required columns. Using local data.");
+          return combinedProducts;
+        }
+        
+        for (let i = 1; i < parsedData.length; i++) {
+          let row = parsedData[i];
+          
+          // Auto-recover if user pasted the entire comma-separated row into a single cell (Column A)
+          if (row[0] && row[0].includes(',') && (!row[1] || row[1].trim() === '')) {
+            const subParsed = parseCSV(row[0]);
+            if (subParsed && subParsed.length > 0) {
+              row = subParsed[0];
+            }
+          }
+
+          if (row.length < sheetHeaders.length) continue;
+          
+          const idVal = row[idIdx].trim();
+          if (!idVal) continue;
+          
+          // Skip old starter template placeholder rows
+          if (['care-shampoo', 'care-soap', 'house-dish-liquid', 'pooja-incense', 'stat-chart', 'oil-coconut', 'oil-sunflower', 'oil-groundnut', 'oil-sesame', 'flour-wheat', 'flour-rice', 'flour-gram', 'flour-chapathi', 'basic-sugar', 'basic-salt', 'dal-chana', 'dal-moong', 'dal-urad', 'dal-toor', 'spice-chilli', 'spice-coriander', 'spice-cumin', 'spice-turmeric', 'spice-garam', 'bev-coffee', 'bev-tea', 'bake-bread', 'bake-biscuits', 'snack-chips', 'ing-specialty'].includes(idVal) || 
+              (row[nameIdx] && (row[nameIdx].toLowerCase().includes('herbal hair shampoo') || row[nameIdx].toLowerCase().includes('organic neem soap') || row[nameIdx].toLowerCase().includes('baking powder') || row[nameIdx].toLowerCase().includes('specialty')))) {
+            continue;
+          }
+          
+          let imgPath = imgIdx !== -1 ? row[imgIdx].trim() : "";
+          const localItem = products.find(p => p.id === idVal);
+          
+          // Prioritize high-res local image from products.js if available, or fallback if sheet image is placeholder/empty
+          if (localItem && localItem.image) {
+            imgPath = localItem.image;
+          } else if (!imgPath || imgPath.includes('leave empty') || imgPath === "" || imgPath === "ghee.jpg" || imgPath.includes('unsplash.com')) {
+            imgPath = "images/hero_bg.jpg";
+          }
+
+          const existingIndex = combinedProducts.findIndex(p => 
+            p.id === idVal || 
+            (idVal.startsWith('snack-') && p.id === idVal.replace('snack-', 'ing-')) || 
+            (idVal.startsWith('ing-') && p.id === idVal.replace('ing-', 'snack-'))
+          );
+          const cleanCat = row[catIdx].trim().toLowerCase().replace(/[\.\,\s]+$/, '').replace(/\s+/g, '-');
+          const productObj = {
+            id: idVal,
+            category: cleanCat,
+            name: row[nameIdx].trim(),
+            price: parseFloat(row[priceIdx]) || (localItem ? localItem.price : 0),
+            unit: row[unitIdx].trim(),
+            image: imgPath || "images/hero_bg.jpg",
+            icon: iconIdx !== -1 && row[iconIdx].trim() ? row[iconIdx].trim() : (localItem ? localItem.icon : "fa-basket-shopping")
+          };
+          
+          if (existingIndex !== -1) {
+            combinedProducts[existingIndex] = productObj;
+          } else {
+            combinedProducts.push(productObj);
+          }
+        }
+        
+        console.log(`Loaded ${combinedProducts.length} total products (Google Sheet synced)`);
+        return combinedProducts;
+      } catch (error) {
+        console.error("Error fetching Google Sheet. Falling back to local data:", error);
+        return products;
+      }
+    }
+
+    // Elements
+    const productGrid = document.getElementById('productGrid');
+    const catalogTabs = document.getElementById('catalogTabs');
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const floatingCart = document.getElementById('floatingCart');
+    const cartBadge = document.getElementById('cartBadge');
+    const cartOverlay = document.getElementById('cartOverlay');
+    const cartDrawer = document.getElementById('cartDrawer');
+    const closeCartBtn = document.getElementById('closeCartBtn');
+    const cartItemsContainer = document.getElementById('cartItemsContainer');
+    const cartFooter = document.getElementById('cartFooter');
+    const cartTotalPrice = document.getElementById('cartTotalPrice');
+    const whatsappCheckoutBtn = document.getElementById('whatsappCheckoutBtn');
+    
+    // Checkout Form Elements
+    const cartCheckoutFormContainer = document.getElementById('cartCheckoutFormContainer');
+    const orderTypeRadios = document.getElementsByName('orderType');
+    const addressGroup = document.getElementById('addressGroup');
+    const custAddress = document.getElementById('custAddress');
+    const paymentTypeRadios = document.getElementsByName('paymentType');
+    const upiNote = document.getElementById('upiNote');
+
+    // Navigation Toggle for Mobile
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Toggle Address Group based on order preference
+    orderTypeRadios.forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        if (e.target.value === 'delivery') {
+          addressGroup.style.display = 'block';
+        } else {
+          addressGroup.style.display = 'none';
+        }
+      });
+    });
+
+    // Toggle UPI note based on payment preference
+    paymentTypeRadios.forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        if (e.target.value === 'upi') {
+          upiNote.style.display = 'block';
+        } else {
+          upiNote.style.display = 'none';
+        }
+      });
+    });
+
+    // 1. URL Category Filtering
+    function getSelectedCategory() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('category') || 'all';
+    }
+
+    // Search Elements
+    const storeSearchInput = document.getElementById('storeSearchInput');
+    const clearSearchBtn = document.getElementById('clearSearchBtn');
+    const searchStatsBar = document.getElementById('searchStatsBar');
+    const searchStatsText = document.getElementById('searchStatsText');
+    const resetSearchLink = document.getElementById('resetSearchLink');
+
+    let currentSelectedCategory = 'all';
+
+    // Clear search helper
+    function clearSearch() {
+      if (storeSearchInput) storeSearchInput.value = '';
+      if (clearSearchBtn) clearSearchBtn.style.display = 'none';
+      if (searchStatsBar) searchStatsBar.style.display = 'none';
+      renderProducts(currentSelectedCategory);
+    }
+
+    function focusSearchInput() {
+      if (storeSearchInput) {
+        storeSearchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        setTimeout(() => storeSearchInput.focus(), 300);
+      }
+    }
+
+    if (clearSearchBtn) {
+      clearSearchBtn.addEventListener('click', clearSearch);
+    }
+    if (resetSearchLink) {
+      resetSearchLink.addEventListener('click', clearSearch);
+    }
+
+    if (storeSearchInput) {
+      storeSearchInput.addEventListener('input', (e) => {
+        const query = e.target.value.trim();
+        if (query) {
+          clearSearchBtn.style.display = 'flex';
+        } else {
+          clearSearchBtn.style.display = 'none';
+          searchStatsBar.style.display = 'none';
+        }
+        renderProducts(currentSelectedCategory);
+      });
+    }
+
+    // Set Active Tab
+    function setActiveTab(category) {
+      currentSelectedCategory = category;
+      tabButtons.forEach(btn => {
+        if (btn.getAttribute('data-category') === category) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+    }
+
+    // Render Products
+    function renderProducts(categoryFilter = 'all') {
+      productGrid.innerHTML = '';
+      
+      const searchQuery = storeSearchInput ? storeSearchInput.value.toLowerCase().trim() : '';
+      let filteredProducts = [];
+
+      if (searchQuery) {
+        // Universal search: search across ALL products regardless of current tab
+        filteredProducts = activeProducts.filter(p => 
+          (p.name && p.name.toLowerCase().includes(searchQuery)) || 
+          (p.id && p.id.toLowerCase().includes(searchQuery)) ||
+          (p.category && p.category.toLowerCase().includes(searchQuery)) ||
+          (p.unit && p.unit.toLowerCase().includes(searchQuery))
+        );
+
+        if (searchStatsBar && searchStatsText) {
+          searchStatsBar.style.display = 'block';
+          searchStatsText.textContent = `Found ${filteredProducts.length} item${filteredProducts.length === 1 ? '' : 's'} for "${storeSearchInput.value.trim()}" across all categories`;
+        }
+      } else {
+        if (searchStatsBar) searchStatsBar.style.display = 'none';
+        filteredProducts = categoryFilter === 'all' 
+          ? activeProducts 
+          : activeProducts.filter(p => p.category === categoryFilter);
+      }
+
+      if (filteredProducts.length === 0) {
+        if (searchQuery) {
+          productGrid.innerHTML = `
+            <div style="grid-column: 1 / -1; text-align: center; padding: 3.5rem 1.5rem; background: #FFFFFF; border-radius: 16px; border: 1.5px dashed var(--color-border); box-shadow: 0 4px 15px rgba(0,0,0,0.04);">
+              <div style="width: 60px; height: 60px; background: rgba(27, 106, 74, 0.08); color: var(--color-primary); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.6rem; margin-bottom: 1rem;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <h3 style="color: var(--color-primary-dark); font-size: 1.25rem; margin-bottom: 0.4rem;">No items found for "${storeSearchInput.value.trim()}"</h3>
+              <p style="color: var(--color-text-muted); max-width: 480px; margin: 0 auto 1.2rem auto; font-size: 0.9rem; line-height: 1.5;">
+                We couldn't find any items matching your search. Don't worry, you can still write and request any unlisted items directly in your WhatsApp order message!
+              </p>
+              <button class="btn btn-primary" onclick="clearSearch()" style="border-radius: 50px; padding: 0.6rem 1.5rem; display: inline-flex; align-items: center; gap: 8px;">
+                <i class="fa-solid fa-rotate-left"></i> Clear Search & Browse All Items
+              </button>
+            </div>
+          `;
+        } else {
+          productGrid.innerHTML = `<p class='no-products' style="grid-column: 1 / -1; text-align: center; padding: 3rem; color: var(--color-text-muted);">No items found in this category.</p>`;
+        }
+        return;
+      }
+
+      filteredProducts.forEach(product => {
+        // Check if item is already in cart
+        const cartItem = cart.find(item => item.id === product.id);
+        const quantity = cartItem ? cartItem.quantity : 0;
+
+        let badgeHtml = '';
+        if (product.category === 'rice-grains' || (product.name && product.name.toLowerCase().includes('annakili'))) {
+          badgeHtml = '<span class="product-card-badge badge-gold">🌾 Farm Direct</span>';
+        } else if (product.category === 'vegetables') {
+          badgeHtml = '<span class="product-card-badge">🌿 Fresh</span>';
+        } else if (product.category === 'dairy') {
+          badgeHtml = '<span class="product-card-badge badge-blue">🥛 Daily Fresh</span>';
+        } else if (product.category === 'devotional') {
+          badgeHtml = '<span class="product-card-badge badge-orange">🪔 Pooja</span>';
+        }
+
+        const mrp = Math.round(product.price * 1.12);
+
+        const productCard = document.createElement('div');
+        productCard.className = 'product-card';
+        productCard.innerHTML = `
+          <div class="product-img-wrapper">
+            ${badgeHtml}
+            <!-- Product image with dynamic error placeholder fall-back -->
+            <img src="${product.image}" alt="${product.name}" class="product-img" onerror="handleImageError(this, '${product.icon}')">
+            <div class="product-placeholder" style="display:none;">
+              <i class="fa-solid ${product.icon}"></i>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-card-category">${product.category.replace('-', ' ')}</span>
+            <h3 class="product-title">${product.name}</h3>
+            <span class="product-unit">${product.unit}</span>
+            <div class="product-price-row">
+              <div class="product-price-block">
+                <span class="product-price">₹${product.price}</span>
+                <span class="product-mrp">₹${mrp}</span>
+              </div>
+              ${quantity > 0 
+                ? `<div class="product-qty-controller">
+                     <button class="qty-btn minus" onclick="updateQty('${product.id}', -1)">-</button>
+                     <span class="qty-display">${quantity}</span>
+                     <button class="qty-btn plus" onclick="updateQty('${product.id}', 1)">+</button>
+                   </div>`
+                : `<button class="btn-add-to-cart" onclick="addToCart('${product.id}')">
+                     <i class="fa-solid fa-plus"></i> Add
+                   </button>`
+              }
+            </div>
+          </div>
+        `;
+        productGrid.appendChild(productCard);
+      });
+    }
+
+    // Category promo / bubble selector helper
+    function filterByPromo(category) {
+      if (storeSearchInput) storeSearchInput.value = '';
+      if (clearSearchBtn) clearSearchBtn.style.display = 'none';
+      if (searchStatsBar) searchStatsBar.style.display = 'none';
+      
+      const newUrl = category === 'all' 
+        ? window.location.pathname 
+        : `${window.location.pathname}?category=${category}`;
+      window.history.pushState({ path: newUrl }, '', newUrl);
+
+      setActiveTab(category);
+      renderProducts(category);
+      
+      if (productGrid) {
+        productGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function selectCategoryBubble(category) {
+      filterByPromo(category);
+    }
+
+    // Fail-safe image error handler: swaps image out for a stylized placeholder icon
+    function handleImageError(imgElement, iconClass) {
+      imgElement.style.display = 'none';
+      const placeholder = imgElement.nextElementSibling;
+      if (placeholder) {
+        placeholder.style.display = 'flex';
+      }
+    }
+
+    // Handle Tab Click
+    catalogTabs.addEventListener('click', (e) => {
+      const btn = e.target.closest('.tab-btn');
+      if (!btn) return;
+      
+      // If user clicks a tab while searching, clear the search and filter by that tab
+      if (storeSearchInput && storeSearchInput.value) {
+        storeSearchInput.value = '';
+        if (clearSearchBtn) clearSearchBtn.style.display = 'none';
+        if (searchStatsBar) searchStatsBar.style.display = 'none';
+      }
+
+      const category = btn.getAttribute('data-category');
+      
+      // Update URL without reloading page
+      const newUrl = category === 'all' 
+        ? window.location.pathname 
+        : `${window.location.pathname}?category=${category}`;
+      window.history.pushState({ path: newUrl }, '', newUrl);
+
+      setActiveTab(category);
+      renderProducts(category);
+    });
+
+    // 2. Cart Operations
+    function saveCart() {
+      localStorage.setItem('mm_cart', JSON.stringify(cart));
+      updateCartUI();
+    }
+
+    function addToCart(productId) {
+      const product = activeProducts.find(p => p.id === productId);
+      if (!product) return;
+
+      cart.push({ ...product, quantity: 1 });
+      saveCart();
+      
+      // Redraw products to show controls
+      const activeCategory = getSelectedCategory();
+      renderProducts(activeCategory);
+    }
+
+    function updateQty(productId, change) {
+      const cartItem = cart.find(item => item.id === productId);
+      if (!cartItem) return;
+
+      cartItem.quantity += change;
+
+      if (cartItem.quantity <= 0) {
+        cart = cart.filter(item => item.id !== productId);
+      }
+
+      saveCart();
+
+      // Redraw product grid to update displays
+      const activeCategory = getSelectedCategory();
+      renderProducts(activeCategory);
+    }
+
+    function updateCartUI() {
+      // Calculate Total Quantities & Price
+      const totalQty = cart.reduce((sum, item) => sum + item.quantity, 0);
+      const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+      
+      cartBadge.textContent = totalQty;
+      
+      // Update Mobile Bottom Nav Cart Badge
+      const mbNavCartBadge = document.getElementById('mbNavCartBadge');
+      if (mbNavCartBadge) {
+        mbNavCartBadge.textContent = totalQty;
+        mbNavCartBadge.style.display = totalQty > 0 ? 'flex' : 'none';
+      }
+      
+      // Update Mobile Bottom Checkout Bar
+      const mbBottomBar = document.getElementById('mobileBottomCartBar');
+      const mbCartCount = document.getElementById('mbCartCount');
+      const mbCartTotal = document.getElementById('mbCartTotal');
+
+      if (totalQty > 0) {
+        cartBadge.classList.add('pop');
+        if (mbBottomBar) {
+          mbBottomBar.classList.add('active');
+          if (mbCartCount) mbCartCount.textContent = `${totalQty} Item${totalQty > 1 ? 's' : ''}`;
+          if (mbCartTotal) mbCartTotal.textContent = `₹${totalPrice}`;
+        }
+      } else {
+        cartBadge.classList.remove('pop');
+        if (mbBottomBar) mbBottomBar.classList.remove('active');
+      }
+
+      // Render Drawer Items
+      cartItemsContainer.innerHTML = '';
+      
+      if (cart.length === 0) {
+        cartItemsContainer.innerHTML = `
+          <div class="empty-cart-message">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <p>Your order list is empty. Add some fresh groceries to get started!</p>
+          </div>
+        `;
+        cartFooter.style.display = 'none';
+        cartCheckoutFormContainer.style.display = 'none';
+        return;
+      }
+
+      cartFooter.style.display = 'block';
+      cartCheckoutFormContainer.style.display = 'block';
+
+      cart.forEach(item => {
+        const subtotal = item.price * item.quantity;
+
+        const cartItemEl = document.createElement('div');
+        cartItemEl.className = 'cart-item';
+        cartItemEl.innerHTML = `
+          <div class="cart-item-info">
+            <h4>${item.name}</h4>
+            <span class="cart-item-meta">${item.unit} | ₹${item.price} each</span>
+          </div>
+          <div class="cart-item-actions-row">
+            <div class="product-qty-controller">
+              <button class="qty-btn minus" onclick="updateQty('${item.id}', -1)">-</button>
+              <span class="qty-display">${item.quantity}</span>
+              <button class="qty-btn plus" onclick="updateQty('${item.id}', 1)">+</button>
+            </div>
+            <span class="cart-item-subtotal">₹${subtotal}</span>
+          </div>
+        `;
+        cartItemsContainer.appendChild(cartItemEl);
+      });
+
+      cartTotalPrice.textContent = `₹${totalPrice}`;
+
+      // Update Dynamic UPI QR Code
+      if (cart.length > 0) {
+        const upiId = SHOP_UPI_ID;
+        const shopName = "Murugesh Maligai";
+        // Standard UPI transaction deep link
+        const upiUrl = `upi://pay?pa=${upiId}&pn=${encodeURIComponent(shopName)}&am=${totalPrice}&cu=INR&tn=${encodeURIComponent("Order at " + shopName)}`;
+        
+        // Generate QR code dynamically via free QR Server API
+        const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(upiUrl)}`;
+        const upiQrContainer = document.getElementById('upiQrContainer');
+        if (upiQrContainer) {
+          upiQrContainer.innerHTML = `<img src="${qrUrl}" alt="Scan to Pay" style="border: 4px solid #FFFFFF; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.12); width: 140px; height: 140px; display: block; margin: 0 auto;">`;
+        }
+
+        // Configure mobile direct app button
+        const mobileUpiLink = document.getElementById('mobileUpiLink');
+        if (mobileUpiLink) {
+          mobileUpiLink.href = upiUrl;
+          const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+          if (isMobile) {
+            mobileUpiLink.style.display = 'inline-flex';
+          } else {
+            mobileUpiLink.style.display = 'none';
+          }
+        }
+      }
+    }
+
+    // Toggle Drawer Visibility
+    function openCart() {
+      cartDrawer.classList.add('active');
+      cartOverlay.classList.add('active');
+      const mbBottomBar = document.getElementById('mobileBottomCartBar');
+      if (mbBottomBar) mbBottomBar.style.display = 'none';
+    }
+
+    function closeCart() {
+      cartDrawer.classList.remove('active');
+      cartOverlay.classList.remove('active');
+      const mbBottomBar = document.getElementById('mobileBottomCartBar');
+      const totalQty = cart.reduce((sum, item) => sum + item.quantity, 0);
+      if (mbBottomBar && totalQty > 0) mbBottomBar.style.display = 'flex';
+    }
+
+    floatingCart.addEventListener('click', openCart);
+    closeCartBtn.addEventListener('click', closeCart);
+    cartOverlay.addEventListener('click', closeCart);
+
+    const backCartBtn = document.getElementById('backCartBtn');
+    if (backCartBtn) backCartBtn.addEventListener('click', closeCart);
+
+    const cancelOrderBtn = document.getElementById('cancelOrderBtn');
+    if (cancelOrderBtn) cancelOrderBtn.addEventListener('click', closeCart);
+
+    const clearCartBtn = document.getElementById('clearCartBtn');
+    if (clearCartBtn) {
+      clearCartBtn.addEventListener('click', () => {
+        if (confirm("Are you sure you want to clear all items from your order list?")) {
+          cart = [];
+          saveCart();
+          updateCartUI();
+          const activeCategory = getSelectedCategory();
+          renderProducts(activeCategory);
+          closeCart();
+        }
+      });
+    }
+
+    // 3. WhatsApp Checkout Formatter & Payment Router
+    function sendWhatsAppOrder(name, phone, orderType, address, paymentType, totalQty, totalPrice, txnId = '') {
+      let message = "Hello Murugesh Maligai,\n";
+      message += "I would like to place an order from your website.\n\n";
+      message += `Customer Details:\n`;
+      message += `- Name: ${name}\n`;
+      message += `- WhatsApp: ${phone}\n`;
+      message += `- Order Type: ${orderType === 'pickup' ? 'Store Pickup' : 'Home Delivery'}\n`;
+      if (orderType === 'delivery') {
+        message += `- Delivery Address: ${address}\n`;
+      }
+      if (paymentType === 'cod') {
+        message += `- Payment Method: Cash on Delivery (COD)\n`;
+      } else {
+        message += `- Payment Method: Online UPI (GPay/PhonePe)\n`;
+        message += `- UPI Ref / UTR No: ${txnId || 'Not provided'}\n`;
+        message += `  (⚠️ Note: Payment Verification Pending. Please confirm credit in GPay/Bank before packing)\n`;
+      }
+      message += "\nOrder List:\n";
+      message += "--------------------------------------\n";
+
+      cart.forEach((item, index) => {
+        const itemTotal = item.price * item.quantity;
+        message += `${index + 1}. ${item.name} (${item.unit}) x ${item.quantity} = ₹${itemTotal}\n`;
+      });
+
+      message += "--------------------------------------\n";
+      message += `Total Items: ${totalQty}\n`;
+      message += `Estimated Total Bill: ₹${totalPrice}\n\n`;
+      message += "Please confirm my order and let me know when it will be ready. Thank you!";
+
+      const encodedMsg = encodeURIComponent(message);
+      const phoneNumber = "919994258914"; // Owner phone number
+
+      // Empty the cart list in local storage right before navigating away
+      cart = [];
+      localStorage.removeItem('mm_cart');
+
+      // Use window.location.href to guarantee browsers never block it as a popup!
+      window.location.href = `https://wa.me/${phoneNumber}?text=${encodedMsg}`;
+    }
+
+    // Printable Digital Bill & Packing Invoice Generator
+    function printOrderBill(name, phone, orderType, address, paymentType, totalQty, totalPrice, txnId = '') {
+      const orderId = 'MM-' + new Date().toISOString().slice(2,10).replace(/-/g, '') + '-' + Math.floor(1000 + Math.random() * 9000);
+      const orderDate = new Date().toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' });
+      
+      const itemsRows = cart.map((item, idx) => {
+        const itemTotal = item.price * item.quantity;
+        return `
+          <tr>
+            <td style="padding: 8px; border-bottom: 1px solid #e2e8f0; text-align: center;">${idx + 1}</td>
+            <td style="padding: 8px; border-bottom: 1px solid #e2e8f0;">
+              <strong>${item.name}</strong>
+            </td>
+            <td style="padding: 8px; border-bottom: 1px solid #e2e8f0; text-align: center;">${item.unit}</td>
+            <td style="padding: 8px; border-bottom: 1px solid #e2e8f0; text-align: center;">${item.quantity}</td>
+            <td style="padding: 8px; border-bottom: 1px solid #e2e8f0; text-align: right;">₹${item.price}</td>
+            <td style="padding: 8px; border-bottom: 1px solid #e2e8f0; text-align: right;"><strong>₹${itemTotal}</strong></td>
+          </tr>
+        `;
+      }).join('');
+
+      const billHtml = '<!DOCTYPE html><html><head>' +
+        `<title>Bill Receipt - ${orderId} | Murugesh Maligai</title>` +
+        '<meta charset="UTF-8">' +
+        '<style>' +
+        `* { box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+         body { margin: 0; padding: 20px; color: #1e293b; background: #ffffff; }
+         .bill-container { max-width: 650px; margin: 0 auto; border: 1px solid #cbd5e1; border-radius: 8px; padding: 24px; }
+         .bill-header { text-align: center; border-bottom: 2px solid #15803d; padding-bottom: 15px; margin-bottom: 20px; }
+         .store-name { font-size: 24px; font-weight: bold; color: #15803d; margin: 0; }
+         .store-sub { font-size: 13px; color: #64748b; margin-top: 4px; }
+         .bill-meta-grid { display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 13px; background: #f8fafc; padding: 12px 16px; border-radius: 6px; }
+         .bill-meta-col { flex: 1; }
+         .bill-meta-col p { margin: 4px 0; }
+         table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 20px; }
+         th { background: #15803d; color: #ffffff; padding: 8px; text-align: left; font-weight: 600; }
+         th.text-center { text-align: center; }
+         th.text-right { text-align: right; }
+         .totals-table { width: 100%; font-size: 14px; margin-top: 10px; }
+         .totals-table td { padding: 6px 8px; }
+         .grand-total-row { font-size: 17px; font-weight: bold; color: #15803d; border-top: 2px solid #15803d; border-bottom: 2px solid #15803d; }
+         .bill-footer { text-align: center; font-size: 12px; color: #64748b; margin-top: 30px; border-top: 1px dashed #cbd5e1; padding-top: 15px; }
+         @media print {
+           body { padding: 0; }
+           .bill-container { border: none; padding: 0; }
+           .no-print { display: none; }
+         }` +
+        '<' + '/style><' + '/head>' +
+        '<' + 'body>' +
+        `
+          <div class="no-print" style="text-align: center; margin-bottom: 20px;">
+            <button onclick="window.print()" style="background: #15803d; color: white; border: none; padding: 10px 24px; font-size: 14px; font-weight: bold; border-radius: 50px; cursor: pointer; box-shadow: 0 4px 12px rgba(21,128,61,0.25);">
+              🖨️ Print / Save as PDF
+            </button>
+          </div>
+          <div class="bill-container">
+            <div class="bill-header">
+              <h1 class="store-name">MURUGESH MALIGAI (முருகேஷ் மளிகை)</h1>
+              <div class="store-sub">50+ Years of Quality & Trust • Main Road, Annur, Coimbatore - 641653</div>
+              <div class="store-sub">Phone / WhatsApp: +91 99942 58914</div>
+            </div>
+
+            <div class="bill-meta-grid">
+              <div class="bill-meta-col">
+                <p><strong>Order No:</strong> ${orderId}</p>
+                <p><strong>Date & Time:</strong> ${orderDate}</p>
+                <p><strong>Order Mode:</strong> ${orderType === 'pickup' ? 'Store Pickup (நேரில் பெறுதல்)' : 'Home Delivery (வீட்டு டெலிவரி)'}</p>
+              </div>
+              <div class="bill-meta-col" style="text-align: right;">
+                <p><strong>Customer:</strong> ${name}</p>
+                <p><strong>Mobile:</strong> ${phone}</p>
+                <p><strong>Payment:</strong> ${paymentType === 'cod' ? 'Cash on Delivery (COD)' : 'UPI Online'}</p>
+                ${txnId ? `<p><strong>UPI Ref / UTR:</strong> ${txnId}</p>` : ''}
+              </div>
+            </div>
+
+            ${orderType === 'delivery' ? `<div style="font-size: 13px; margin-bottom: 16px; background: #fffbeb; padding: 8px 12px; border-radius: 6px; border: 1px solid #fef3c7;"><strong>Delivery Address:</strong> ${address}</div>` : ''}
+
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 40px;" class="text-center">#</th>
+                  <th>Item Description (பொருட்கள்)</th>
+                  <th class="text-center" style="width: 90px;">Pack/Unit</th>
+                  <th class="text-center" style="width: 60px;">Qty</th>
+                  <th class="text-right" style="width: 80px;">Rate</th>
+                  <th class="text-right" style="width: 90px;">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${itemsRows}
+              </tbody>
+            </table>
+
+            <table class="totals-table">
+              <tr>
+                <td style="text-align: right; width: 75%;"><strong>Total Items / Quantity:</strong></td>
+                <td style="text-align: right;"><strong>${totalQty}</strong></td>
+              </tr>
+              <tr>
+                <td style="text-align: right;"><strong>Delivery Charges:</strong></td>
+                <td style="text-align: right; color: #15803d;"><strong>FREE</strong></td>
+              </tr>
+              <tr class="grand-total-row">
+                <td style="text-align: right;">GRAND TOTAL / மொத்த தொகை:</td>
+                <td style="text-align: right;">₹${totalPrice}</td>
+              </tr>
+            </table>
+
+            <div class="bill-footer">
+              <p style="font-weight: 600; color: #15803d; margin-bottom: 4px;">நன்றி! மீண்டும் வருக! • Thank you for choosing Murugesh Maligai!</p>
+              <p>For any queries or quick reorders, WhatsApp or Call: +91 99942 58914</p>
+            </div>
+          </div>
+        ` + '<' + '/body>' + '<' + '/html>';
+
+      const printWindow = window.open('', '_blank');
+      if (printWindow) {
+        printWindow.document.open();
+        printWindow.document.write(billHtml);
+        printWindow.document.close();
+        printWindow.focus();
+        setTimeout(() => {
+          try {
+            printWindow.print();
+          } catch (e) {
+            console.log('Auto print triggered');
+          }
+        }, 600);
+      } else {
+        alert("Pop-up blocked. Please allow pop-ups for this website to print your bill receipt.");
+      }
+    }
+
+    // Show Custom Animated Confirmation Modal
+    function showConfirmationModal(name, phone, orderType, address, paymentType, totalQty, totalPrice, txnId = '') {
+      const modalOverlay = document.getElementById('confirmModalOverlay');
+      const modalTotal = document.getElementById('modalTotal');
+      const modalPayment = document.getElementById('modalPayment');
+      const modalUtrRow = document.getElementById('modalUtrRow');
+      const modalUtr = document.getElementById('modalUtr');
+      const modalVerificationNote = document.getElementById('modalVerificationNote');
+      const modalWhatsAppBtn = document.getElementById('modalWhatsAppBtn');
+      const redirectCountdown = document.getElementById('redirectCountdown');
+      
+      const modalPrintBillBtn = document.getElementById('modalPrintBillBtn');
+      
+      modalTotal.textContent = `₹${totalPrice}`;
+      if (paymentType === 'cod') {
+        modalPayment.textContent = 'Cash on Delivery (Pay upon receipt)';
+        modalPayment.style.color = 'var(--color-primary-dark)';
+        if (modalUtrRow) modalUtrRow.style.display = 'none';
+        if (modalVerificationNote) modalVerificationNote.style.display = 'none';
+      } else {
+        modalPayment.textContent = 'Online UPI (Verification Pending)';
+        modalPayment.style.color = '#D48806';
+        if (modalUtrRow) {
+          modalUtrRow.style.display = 'flex';
+          modalUtr.textContent = txnId || '--';
+        }
+        if (modalVerificationNote) modalVerificationNote.style.display = 'block';
+      }
+      
+      let countdown = 20;
+      redirectCountdown.textContent = `Opening WhatsApp in ${countdown} seconds...`;
+      
+      // Auto redirect timer
+      const timer = setInterval(() => {
+        countdown--;
+        if (countdown > 0) {
+          redirectCountdown.textContent = `Opening WhatsApp in ${countdown} seconds...`;
+        } else {
+          clearInterval(timer);
+          triggerWhatsAppSubmit();
+        }
+      }, 1000);
+
+      // Onclick override for manual click
+      modalWhatsAppBtn.onclick = () => {
+        clearInterval(timer);
+        triggerWhatsAppSubmit();
+      };
+
+      // Print Bill Handler
+      if (modalPrintBillBtn) {
+        modalPrintBillBtn.onclick = () => {
+          clearInterval(timer);
+          redirectCountdown.textContent = "Bill opened for printing. Click below when ready to send on WhatsApp:";
+          printOrderBill(name, phone, orderType, address, paymentType, totalQty, totalPrice, txnId);
+        };
+      }
+      
+      function triggerWhatsAppSubmit() {
+        sendWhatsAppOrder(name, phone, orderType, address, paymentType, totalQty, totalPrice, txnId);
+        closeModal();
+      }
+
+      function closeModal() {
+        clearInterval(timer);
+        modalOverlay.classList.remove('active');
+        setTimeout(() => {
+          modalOverlay.style.display = 'none';
+        }, 300);
+      }
+
+      // Show Modal
+      modalOverlay.style.display = 'flex';
+      setTimeout(() => {
+        modalOverlay.classList.add('active');
+      }, 50);
+      
+      // Close sidebar drawer
+      closeCart();
+    }
+
+    // Show Custom Interactive UPI Warning / Guidance Modal
+    function showUtrWarningModal(message) {
+      const warningModal = document.getElementById('utrWarningModalOverlay');
+      const warningMsg = document.getElementById('utrWarningMsg');
+      const closeBtn = document.getElementById('closeUtrWarningBtn');
+      
+      if (warningMsg && message) {
+        warningMsg.textContent = message;
+      }
+      
+      warningModal.style.display = 'flex';
+      setTimeout(() => {
+        warningModal.classList.add('active');
+      }, 50);
+
+      closeBtn.onclick = () => {
+        warningModal.classList.remove('active');
+        setTimeout(() => {
+          warningModal.style.display = 'none';
+          openCart();
+          const utrInput = document.getElementById('custUtr');
+          if (utrInput) utrInput.focus();
+        }, 300);
+      };
+    }
+
+    whatsappCheckoutBtn.addEventListener('click', () => {
+      if (cart.length === 0) return;
+
+      const name = document.getElementById('custName').value.trim();
+      const phone = document.getElementById('custPhone').value.trim();
+      const orderType = document.querySelector('input[name="orderType"]:checked').value;
+      const address = document.getElementById('custAddress').value.trim();
+      const paymentType = document.querySelector('input[name="paymentType"]:checked').value;
+
+      if (!name || !phone) {
+        alert("Please enter your Name and WhatsApp Mobile Number to place the order.");
+        return;
+      }
+      if (orderType === 'delivery' && !address) {
+        alert("Please enter your Delivery Address.");
+        return;
+      }
+
+      const totalQty = cart.reduce((sum, item) => sum + item.quantity, 0);
+      const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+
+      // Handle UPI payment flow
+      if (paymentType === 'upi') {
+        // If a valid Razorpay key is configured, open Razorpay popup
+        if (RAZORPAY_KEY_ID && RAZORPAY_KEY_ID !== 'rzp_test_placeholder') {
+          const options = {
+            "key": RAZORPAY_KEY_ID,
+            "amount": totalPrice * 100, // Razorpay expects amount in paise (1 INR = 100 paise)
+            "currency": "INR",
+            "name": "Murugesh Maligai",
+            "description": "Payment for Groceries",
+            "handler": function (response) {
+              // This callback runs only after a successful payment
+              showConfirmationModal(name, phone, orderType, address, paymentType, totalQty, totalPrice, response.razorpay_payment_id);
+            },
+            "prefill": {
+              "name": name,
+              "contact": phone
+            },
+            "theme": {
+              "color": "#1B6A4A" // Brand Green
+            }
+          };
+          const rzp1 = new Razorpay(options);
+          rzp1.open();
+        } else {
+          // Direct QR Scan: Require UPI Reference Number or Transaction ID
+          const utrInput = document.getElementById('custUtr');
+          const rawUtr = utrInput ? utrInput.value.trim() : '';
+          const cleanUtr = rawUtr.replace(/[\s-]/g, ''); // Remove spaces or dashes
+
+          if (!cleanUtr) {
+            showUtrWarningModal(`Please scan the QR code to pay ₹${totalPrice} via GPay / PhonePe / Paytm, and enter your 12-digit UPI Ref / UTR Number from your payment receipt.`);
+            return;
+          }
+
+          // Check if valid UTR (12-digit numeric) or valid alphanumeric Transaction ID (10-30 characters, contains digits)
+          const isNumericUtr = /^\d{11,16}$/.test(cleanUtr);
+          const isAlphaNumericTxn = /^[A-Za-z0-9]{10,30}$/.test(cleanUtr) && /\d/.test(cleanUtr);
+          const isForbiddenWord = /^(paid|done|gpay|phonepe|paytm|cash|ok|yes|test|none|nil|null)$/i.test(cleanUtr);
+
+          if (isForbiddenWord || (!isNumericUtr && !isAlphaNumericTxn)) {
+            showUtrWarningModal("The reference ID you entered is invalid. Please check your GPay / PhonePe payment receipt and enter the real 12-digit numeric UPI Ref / UTR number (e.g. 424512345678).");
+            return;
+          }
+
+          showConfirmationModal(name, phone, orderType, address, paymentType, totalQty, totalPrice, rawUtr);
+        }
+      } else {
+        // Standard COD flow
+        showConfirmationModal(name, phone, orderType, address, paymentType, totalQty, totalPrice);
+      }
+    });
+
+    // Initial Load Setup
+    window.addEventListener('DOMContentLoaded', async () => {
+      activeProducts = await loadProducts();
+      const activeCategory = getSelectedCategory();
+      setActiveTab(activeCategory);
+
+      // Check deep link params
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlSearch = urlParams.get('search');
+
+      if (urlSearch && urlSearch.trim()) {
+        const cleanQuery = urlSearch.trim();
+        if (storeSearchInput) {
+          storeSearchInput.value = cleanQuery;
+          if (clearSearchBtn) clearSearchBtn.style.display = 'flex';
+        }
+        renderProducts('all');
+        setTimeout(() => {
+          if (storeSearchInput) {
+            storeSearchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }, 350);
+      } else {
+        renderProducts(activeCategory);
+      }
+
+      updateCartUI();
+
+      if (urlParams.get('focus') === 'search') {
+        setTimeout(() => focusSearchInput(), 400);
+      }
+      if (urlParams.get('open') === 'cart') {
+        setTimeout(() => openCart(), 400);
+      }
+    });
+  </script>
+
+  <!-- PWA Bottom Floating Install Banner -->
+  <div class="pwa-bottom-banner" id="pwaBanner">
+    <div class="pwa-banner-info">
+      <img src="images/icon-192.png" alt="Murugesh Maligai App Icon" class="pwa-banner-icon">
+      <div class="pwa-banner-text">
+        <h4>Murugesh Maligai App</h4>
+        <p>Install for faster shopping & offline access</p>
+      </div>
+    </div>
+    <div class="pwa-banner-actions">
+      <button class="pwa-banner-install-btn" id="pwaBannerInstallBtn">Install</button>
+      <button class="pwa-banner-close" id="pwaBannerClose" aria-label="Dismiss banner">&times;</button>
+    </div>
+  </div>
+
+  <!-- PWA Service Worker Registration & Installation Prompt Script -->
+  <script>
+    let deferredPrompt;
+    const pwaInstallBtn = document.getElementById('pwaInstallBtn');
+    const pwaBanner = document.getElementById('pwaBanner');
+    const pwaBannerInstallBtn = document.getElementById('pwaBannerInstallBtn');
+    const pwaBannerClose = document.getElementById('pwaBannerClose');
+
+    // Register Service Worker (Auto-clears during local development so Live Server is always 100% real-time)
+    if ('serviceWorker' in navigator) {
+      if (location.hostname === '127.0.0.1' || location.hostname === 'localhost') {
+        navigator.serviceWorker.getRegistrations().then((registrations) => {
+          for (let registration of registrations) {
+            registration.unregister();
+          }
+        });
+        caches.keys().then((names) => {
+          for (let name of names) caches.delete(name);
+        });
+      } else {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js')
+            .then((reg) => console.log('Service Worker registered successfully:', reg.scope))
+            .catch((err) => console.warn('Service Worker registration failed:', err));
+        });
+      }
+    }
+
+    // Capture beforeinstallprompt event
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+
+      // Show header install button
+      if (pwaInstallBtn) {
+        pwaInstallBtn.style.display = 'inline-flex';
+      }
+
+      // Check if user has dismissed prompt recently in this session
+      if (!sessionStorage.getItem('pwa_dismissed') && pwaBanner) {
+        setTimeout(() => {
+          pwaBanner.classList.add('show');
+        }, 2500);
+      }
+    });
+
+    function triggerPwaInstall() {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            console.log('User accepted PWA installation');
+          }
+          deferredPrompt = null;
+          if (pwaBanner) pwaBanner.classList.remove('show');
+        });
+      } else {
+        alert("To install Murugesh Maligai App:\n\n• On Android (Chrome): Tap the 3 dots (⋮) at top-right and select 'Install app' or 'Add to Home screen'.\n• On iPhone (Safari): Tap the Share button (⎋) at the bottom and tap 'Add to Home Screen'.\n• On PC/Laptop: Click the Install icon in the right side of your address bar.");
+      }
+    }
+
+    if (pwaInstallBtn) {
+      pwaInstallBtn.addEventListener('click', triggerPwaInstall);
+    }
+    if (pwaBannerInstallBtn) {
+      pwaBannerInstallBtn.addEventListener('click', triggerPwaInstall);
+    }
+    if (pwaBannerClose) {
+      pwaBannerClose.addEventListener('click', () => {
+        if (pwaBanner) pwaBanner.classList.remove('show');
+        sessionStorage.setItem('pwa_dismissed', 'true');
+      });
+    }
+
+    window.addEventListener('appinstalled', () => {
+      console.log('Murugesh Maligai App installed successfully!');
+      if (pwaInstallBtn) pwaInstallBtn.style.display = 'none';
+      if (pwaBanner) pwaBanner.classList.remove('show');
+      deferredPrompt = null;
+    });
+  </script>
+
+</body>
+</html>

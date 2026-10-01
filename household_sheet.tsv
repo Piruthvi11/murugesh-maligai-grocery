@@ -1,0 +1,63 @@
+﻿ID	Category	Name	Price	Unit	Image	Icon	InStock
+house-arasan-soap-31rs	household	Arasan Washing Soap (அரசன் சலவை சோப்பு - ₹31)	31	1 Bar (₹31)	images/arasan_soap.png	fa-soap	TRUE
+house-arasan-soap-pack4	household	Arasan Washing Soap Saver Pack (அரசன் சலவை சோப்பு - 4 Bars)	122	4 Bars (₹122 / ₹30.5 each)	images/arasan_soap.png	fa-soap	TRUE
+house-rin-bar-10rs	household	Rin Detergent Bar (ரின் பார் சோப்பு - ₹10)	10	1 Bar (₹10)	images/rin_bar.png	fa-soap	TRUE
+house-rin-bar-20rs	household	Rin Detergent Bar (ரின் பார் சோப்பு - ₹20)	20	1 Bar (₹20)	images/rin_bar.png	fa-soap	TRUE
+house-surf-excel-bar-10rs	household	Surf Excel Stain Eraser Bar (சர்ப் எக்செல் பார் - ₹10)	10	1 Bar (₹10)	images/surf_excel_bar.png	fa-soap	TRUE
+house-surf-excel-bar-20rs	household	Surf Excel Stain Eraser Bar (சர்ப் எக்செல் பார் - ₹20)	20	1 Bar (₹20)	images/surf_excel_bar.png	fa-soap	TRUE
+house-surf-excel-bar-40rs	household	Surf Excel Stain Eraser Bar (சர்ப் எக்செல் பார் - ₹40)	40	1 Bar (₹40)	images/surf_excel_bar.png	fa-soap	TRUE
+house-power-bar-10rs	household	Power Detergent Soap (பவர் சலவை சோப்பு - ₹10)	10	1 Bar (₹10)	images/power_soap.png	fa-soap	TRUE
+house-power-bar-23rs	household	Power Detergent Soap (பவர் சலவை சோப்பு - ₹23)	23	1 Bar (₹23)	images/power_soap.png	fa-soap	TRUE
+house-ponvandu-bar-10rs	household	Ponvandu Detergent Soap (பொன்வண்டு சோப்பு - ₹10)	10	1 Bar (₹10)	images/ponvandu_soap.png	fa-soap	TRUE
+house-ponvandu-bar-25rs	household	Ponvandu Detergent Soap (பொன்வண்டு சோப்பு - ₹25)	25	1 Bar (₹25)	images/ponvandu_soap.png	fa-soap	TRUE
+house-chutti-soap-15rs	household	Chutti Washing Soap (சுட்டி சலவை சோப்பு - ₹15)	15	1 Bar (₹15)	images/chutti_soap.png	fa-soap	TRUE
+house-chutti-soap-30rs	household	Chutti Washing Soap (சுட்டி சலவை சோப்பு - ₹30)	30	1 Bar (₹30)	images/chutti_soap.png	fa-soap	TRUE
+house-arasan-yellow-20rs	household	Arasan Yellow Washing Soap (அரசன் மஞ்சள் சோப்பு - ₹20)	20	1 Bar (₹20)	images/arasan_yellow_soap.png	fa-soap	TRUE
+house-rin-powder-10rs	household	Rin Advanced Detergent Powder (ரின் சலவைத் தூள் - ₹10 Sachet)	10	1 Sachet (₹10)	images/rin_powder.png	fa-soap	TRUE
+house-rin-powder-56rs	household	Rin Advanced Detergent Powder (ரின் சலவைத் தூள் - 500g)	56	500 g	images/rin_powder.png	fa-soap	TRUE
+house-rin-powder-114rs	household	Rin Advanced Detergent Powder (ரின் சலவைத் தூள் - 1kg)	114	1 kg	images/rin_powder.png	fa-soap	TRUE
+house-surf-excel-powder-10rs	household	Surf Excel Easy Wash Powder (சர்ப் எக்செல் பவுடர் - ₹10 Sachet)	10	1 Sachet (₹10)	images/surf_excel_powder.png	fa-soap	TRUE
+house-surf-excel-powder-87rs	household	Surf Excel Easy Wash Powder (சர்ப் எக்செல் பவுடர் - 500g)	87	500 g	images/surf_excel_powder.png	fa-soap	TRUE
+house-surf-excel-powder-175rs	household	Surf Excel Easy Wash Powder (சர்ப் எக்செல் பவுடர் - 1kg)	175	1 kg	images/surf_excel_powder.png	fa-soap	TRUE
+house-ariel-powder-10rs	household	Ariel Perfect Wash Detergent Powder (ஏரியல் பவுடர் - ₹10 Sachet)	10	1 Sachet (₹10)	images/ariel_powder.png	fa-soap	TRUE
+house-ariel-powder-62rs	household	Ariel Perfect Wash Detergent Powder (ஏரியல் பவுடர் - 500g)	62	500 g	images/ariel_powder.png	fa-soap	TRUE
+house-wheel-powder-48rs	household	Active Wheel Detergent Powder (வீல் பவுடர் - 500g)	48	500 g	images/wheel_powder.png	fa-soap	TRUE
+house-wheel-powder-95rs	household	Active Wheel Detergent Powder (வீல் பவுடர் - 1kg)	95	1 kg	images/wheel_powder.png	fa-soap	TRUE
+house-tide-powder-52rs	household	Tide Plus Extra Power Detergent Powder (டைட் பவுடர் - 500g)	52	500 g	images/tide_powder.png	fa-soap	TRUE
+house-vim-bar-5rs	household	Vim Dishwash Bar (விம் பார் - ₹5)	5	1 Bar (₹5)	images/vim_bar.png	fa-soap	TRUE
+house-vim-bar-10rs	household	Vim Dishwash Bar (விம் பார் - ₹10)	10	1 Bar (₹10)	images/vim_bar.png	fa-soap	TRUE
+house-vim-bar-20rs	household	Vim Dishwash Bar (விம் பார் - ₹20)	20	1 Bar (₹20)	images/vim_bar.png	fa-soap	TRUE
+house-exo-bar-5rs	household	Exo Dishwash Bar (எக்ஸோ பார் - ₹5)	5	1 Bar (₹5)	images/exo_bar.png	fa-soap	TRUE
+house-exo-bar-10rs	household	Exo Dishwash Bar (எக்ஸோ பார் - ₹10)	10	1 Bar (₹10)	images/exo_bar.png	fa-soap	TRUE
+house-exo-box-32rs	household	Exo Dishwash Round Tub / Box (எக்ஸோ டப் - ₹32)	32	1 Tub (₹32)	images/exo_box.png	fa-soap	TRUE
+house-exo-box-63rs	household	Exo Dishwash Round Tub / Box (எக்ஸோ டப் - ₹63)	63	1 Tub (₹63)	images/exo_box.png	fa-soap	TRUE
+house-gio-soap-10rs	household	GIO Dishwash Soap Bar (ஜியோ பாத்திரம் கழுவும் சோப்பு - ₹10)	10	1 Bar (₹10)	images/gio_soap.png	fa-soap	TRUE
+house-vim-liquid-15rs	household	Vim Gel Dishwash Liquid Pouch (விம் ஜெல் லிக்விட் - ₹15)	15	1 Pouch (₹15)	images/vim_liquid.png	fa-bottle-droplet	TRUE
+house-steel-scrub-8rs	household	Steel Wire Scrubber (ஸ்டீல் ஸ்க்ரப்பர் - ₹8)	8	1 Piece (₹8)	images/steel_scrubber.png	fa-circle-dot	TRUE
+house-green-scrub-8rs	household	Exo / Scotch-Brite Green Scrub Pad (கிரீன் ஸ்க்ரப் - ₹8)	8	1 Piece (₹8)	images/green_scrubber.png	fa-square	TRUE
+house-ujala-supreme-10rs	household	Ujala Supreme Fabric Whitener (உஜாலா சுப்ரீம் - ₹10)	10	1 Bottle (₹10)	images/ujala_supreme.png	fa-bottle-droplet	TRUE
+house-ujala-supreme-20rs	household	Ujala Supreme Fabric Whitener (உஜாலா சுப்ரீம் - ₹20)	20	1 Bottle (₹20)	images/ujala_supreme.png	fa-bottle-droplet	TRUE
+house-comfort-sachet-3rs	household	Comfort Fabric Conditioner Sachet (கம்ஃபோர்ட் - ₹3 Sachet)	3	1 Sachet (₹3)	images/comfort_sachet.png	fa-bottle-droplet	TRUE
+house-comfort-pink-58rs	household	Comfort Fabric Conditioner Pink (கம்ஃபோர்ட் பிங்க் - ₹58 Bottle)	58	1 Bottle (Pink - ₹58)	images/comfort_pink.png	fa-bottle-droplet	TRUE
+house-comfort-blue-58rs	household	Comfort Fabric Conditioner Blue (கம்ஃபோர்ட் ப்ளூ - ₹58 Bottle)	58	1 Bottle (Blue - ₹58)	images/comfort_blue.png	fa-bottle-droplet	TRUE
+house-comfort-black-58rs	household	Comfort Fabric Conditioner Black (கம்ஃபோர்ட் பிளாக் - ₹58 Bottle)	58	1 Bottle (Black - ₹58)	images/comfort_black.png	fa-bottle-droplet	TRUE
+house-harpic-blue-46rs	household	Harpic Power Plus Toilet Cleaner Blue (ஹார்பிக் ப்ளூ - ₹46)	46	200 ml (₹46)	images/harpic_blue.png	fa-spray-can-sparkles	TRUE
+house-harpic-red-48rs	household	Harpic Bathroom Cleaner Red (ஹார்பிக் ரெட் - ₹48)	48	200 ml (₹48)	images/harpic_red.png	fa-spray-can-sparkles	TRUE
+house-lizol-lemon-44rs	household	Lizol Disinfectant Floor Cleaner Citrus Lemon (லைசால் எலுமிச்சை - ₹44)	44	200 ml (₹44)	images/lizol_lemon.png	fa-spray-can-sparkles	TRUE
+house-lizol-pink-44rs	household	Lizol Disinfectant Floor Cleaner Floral Pink (லைசால் பூ வாசம் - ₹44)	44	200 ml (₹44)	images/lizol_pink.png	fa-spray-can-sparkles	TRUE
+house-bleaching-powder-10rs	household	Bleaching Powder (ப்ளீச்சிங் பவுடர் - ₹10 Pack)	10	1 Pack (₹10)	images/bleaching_powder.png	fa-box-tissue	TRUE
+house-bleaching-powder-250g	household	Bleaching Powder (ப்ளீச்சிங் பவுடர் - 250g)	20	250 g	images/bleaching_powder.png	fa-box-tissue	TRUE
+house-bleaching-powder-500g	household	Bleaching Powder (ப்ளீச்சிங் பவுடர் - 500g)	40	500 g	images/bleaching_powder.png	fa-box-tissue	TRUE
+house-bleaching-powder-1kg	household	Bleaching Powder (ப்ளீச்சிங் பவுடர் - 1kg)	75	1 kg	images/bleaching_powder.png	fa-box-tissue	TRUE
+house-phenyl-white-50rs	household	Phenyl Floor Cleaner White (பினாயில் வெள்ளை - ₹50)	50	1 Bottle (White - ₹50)	images/phenyl_white.png	fa-spray-can-sparkles	TRUE
+house-phenyl-green-50rs	household	Phenyl Floor Cleaner Green (பினாயில் பச்சை - ₹50)	50	1 Bottle (Green - ₹50)	images/phenyl_green.png	fa-spray-can-sparkles	TRUE
+house-phenyl-pink-50rs	household	Phenyl Floor Cleaner Pink (பினாயில் பிங்க் - ₹50)	50	1 Bottle (Pink - ₹50)	images/phenyl_pink.png	fa-spray-can-sparkles	TRUE
+house-goodknight-refill-85rs	household	Good Knight Flash Liquid Refill (குட்நைட் ரீபில் - ₹85)	85	1 Refill (₹85)	images/goodknight_refill.png	fa-shield-virus	TRUE
+house-allout-refill-83rs	household	All Out Mosquito Liquid Refill (ஆல் அவுட் ரீபில் - ₹83)	83	1 Refill (₹83)	images/allout_refill.png	fa-shield-virus	TRUE
+house-goodknight-combo-100rs	household	Good Knight Machine + Refill Combo (குட்நைட் மெஷின் செட் - ₹100)	100	1 Machine + Refill Set (₹100)	images/goodknight_combo.png	fa-shield-virus	TRUE
+house-allout-combo-100rs	household	All Out Machine + Refill Combo (ஆல் அவுட் மெஷின் செட் - ₹100)	100	1 Machine + Refill Set (₹100)	images/allout_combo.png	fa-shield-virus	TRUE
+house-goodknight-coil-5rs	household	Good Knight Mosquito Coils (குட்நைட் சுருள் - 1 Set)	5	1 Set (₹5)	images/goodknight_coils.png	fa-shield-virus	TRUE
+house-goodknight-coil-45rs	household	Good Knight Mosquito Coils Packet (குட்நைட் சுருள் பாக்கெட் - 10 Coils)	45	1 Packet (10 Coils - ₹45)	images/goodknight_coils.png	fa-shield-virus	TRUE
+house-hit-red-83rs	household	Hit Mosquito & Cockroach Spray Red (ஹிட் ரெட் ஸ்ப்ரே - 200ml)	83	200 ml (Red - ₹83)	images/hit_red_spray.png	fa-spray-can	TRUE
+house-hit-black-83rs	household	Hit Mosquito Spray Black (ஹிட் பிளாக் ஸ்ப்ரே - 200ml)	83	200 ml (Black - ₹83)	images/hit_black_spray.png	fa-spray-can	TRUE
+house-odonil-20rs	household	Odonil Air Freshener Block (ஓடோனில் நறுமணம் - ₹20)	20	1 Packet (₹20)	images/odonil_packet.png	fa-wind	TRUE

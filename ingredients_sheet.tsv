@@ -1,0 +1,18 @@
+ID	Category	Name	Price	Unit	Image	Icon	InStock
+ing-sakthi-appalam-20rs	ingredients	Sakthi Appalam (சக்தி அப்பளம் - ₹20)	20	1 Pack (₹20)	images/sakthi_appalam.png	fa-circle-dot	TRUE
+ing-sakthi-appalam-30rs	ingredients	Sakthi Appalam (சக்தி அப்பளம் - ₹30)	30	1 Big Pack (₹30)	images/sakthi_appalam.png	fa-circle-dot	TRUE
+ing-rsr-appalam-10rs	ingredients	RSR Appalam (ஆர்.எஸ்.ஆர் அப்பளம் - ₹10)	10	1 Small Pack (₹10)	images/rsr_appalam.png	fa-circle-dot	TRUE
+ing-rsr-appalam-17rs	ingredients	RSR Appalam (ஆர்.எஸ்.ஆர் அப்பளம் - ₹17)	17	1 Medium Pack (₹17)	images/rsr_appalam.png	fa-circle-dot	TRUE
+ing-rsr-appalam-32rs	ingredients	RSR Appalam (ஆர்.எஸ்.ஆர் அப்பளம் - ₹32)	32	1 Big Pack (₹32)	images/rsr_appalam.png	fa-circle-dot	TRUE
+ing-rushi-semiya-15rs	ingredients	Rushi Vermicelli / Semiya (ருஷி சேமியா - ₹15)	15	1 Pack (₹15)	images/rushi_semiya.png	fa-bowl-rice	TRUE
+ing-sudar-semiya-18rs	ingredients	Sudar Vermicelli / Semiya (சுடர் சேமியா - ₹18)	18	1 Pack (₹18)	images/sudar_semiya.png	fa-bowl-rice	TRUE
+ing-anil-semiya-22rs	ingredients	Anil Roasted Semiya (அனில் வறுத்த சேமியா - ₹22)	22	1 Pack (₹22)	images/anil_semiya.png	fa-bowl-rice	TRUE
+ing-anil-ragi-semiya-25rs	ingredients	Anil Ragi Vermicelli / Semiya (அனில் ராகி சேமியா - ₹25)	25	1 Pack (Ragi - ₹25)	images/anil_ragi_semiya.png	fa-bowl-rice	TRUE
+ing-macaroni-200g	ingredients	Macaroni Pasta (மக்ரோனி பாஸ்தா - 200g)	30	200 g (₹30)	images/macaroni.png	fa-bowl-rice	TRUE
+ing-munthiri-10g	ingredients	Cashews / Munthiri (முந்திரி பருப்பு - 10g)	10	10 g (₹10)	images/munthiri.png	fa-seedling	TRUE
+ing-munthiri-20g	ingredients	Cashews / Munthiri (முந்திரி பருப்பு - 20g)	20	20 g (₹20)	images/munthiri.png	fa-seedling	TRUE
+ing-badam-10g	ingredients	Almonds / Badam (பாதாம் பருப்பு - 10g)	10	10 g (₹10)	images/badam.png	fa-seedling	TRUE
+ing-badam-50g	ingredients	Almonds / Badam (பாதாம் பருப்பு - 50g)	50	50 g (₹50)	images/badam.png	fa-seedling	TRUE
+ing-ular-thiratchi-90rs	ingredients	Raisins / Ular Thiratchi (உலர் திராட்சை / கிஸ்மிஸ் - ₹90)	90	1 Packet (₹90)	images/ular_thiratchi.png	fa-cubes-stacked	TRUE
+ing-gulab-jamun-mix-135rs	ingredients	Gulab Jamun Mix (குலாப் ஜாமூன் மிக்ஸ் - 1+1 Offer)	135	1 Pack (Buy 1 Get 1 Free - ₹135)	images/gulab_jamun_mix.png	fa-cake-candles	TRUE
+ing-payasam-mix-90rs	ingredients	Aachi Royal Semiya Payasam Mix (ஆச்சி பாயாசம் மிக்ஸ் - 1+1 Offer - ₹90)	90	1 Packet (Buy 1 Get 1 Free - ₹90)	images/aachi_payasam_mix.png	fa-mug-hot	TRUE

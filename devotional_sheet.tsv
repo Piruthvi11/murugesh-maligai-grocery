@@ -1,0 +1,36 @@
+ID	Category	Name	Price	Unit	Image	Icon	InStock
+dev-camphor-pkt-5rs	devotional	Camphor Packet (கற்பூரம் பாக்கெட் - ₹5)	5	1 Small Pack (₹5)	images/camphor_packet.png	fa-fire	TRUE
+dev-camphor-pkt-10rs	devotional	Camphor Packet (கற்பூரம் பாக்கெட் - ₹10)	10	1 Medium Pack (₹10)	images/camphor_packet.png	fa-fire	TRUE
+dev-camphor-pkt-20rs	devotional	Camphor Packet (கற்பூரம் பாக்கெட் - ₹20)	20	1 Big Pack (₹20)	images/camphor_packet.png	fa-fire	TRUE
+dev-camphor-pkt-45rs	devotional	Camphor Packet (கற்பூரம் பாக்கெட் - ₹45)	45	1 Jumbo Pack (₹45)	images/camphor_packet.png	fa-fire	TRUE
+dev-camphor-btl-45rs	devotional	Camphor Bottle (கற்பூரம் டப்பா / பாட்டில் - ₹45)	45	1 Small Bottle (₹45)	images/camphor_bottle.png	fa-fire	TRUE
+dev-camphor-btl-95rs	devotional	Camphor Bottle (கற்பூரம் டப்பா / பாட்டில் - ₹95)	95	1 Big Bottle (₹95)	images/camphor_bottle.png	fa-fire	TRUE
+dev-cycle-agarbathi-10rs	devotional	Cycle Pure Agarbathi (சைக்கிள் பியூர் அகர்பத்தி - ₹10)	10	1 Pack (₹10)	images/cycle_agarbathi.png	fa-hands-praying	TRUE
+dev-cycle-agarbathi-20rs	devotional	Cycle Pure Agarbathi (சைக்கிள் பியூர் அகர்பத்தி - ₹20)	20	1 Medium Pack (₹20)	images/cycle_agarbathi.png	fa-hands-praying	TRUE
+dev-cycle-agarbathi-45rs	devotional	Cycle Pure Agarbathi (சைக்கிள் பியூர் அகர்பத்தி - ₹45)	45	1 Big Pack (₹45)	images/cycle_agarbathi.png	fa-hands-praying	TRUE
+dev-rose-agarbathi-10rs	devotional	Rose Agarbathi (ரோஸ் நறுமண அகர்பத்தி - ₹10)	10	1 Pack (₹10)	images/rose_agarbathi.png	fa-hands-praying	TRUE
+dev-mangaldeep-agarbathi-10rs	devotional	Mangaldeep Agarbathi (மங்கள்தீப் அகர்பத்தி - ₹10)	10	1 Pack (₹10)	images/mangaldeep_agarbathi.png	fa-hands-praying	TRUE
+dev-mangaldeep-agarbathi-45rs	devotional	Mangaldeep Agarbathi (மங்கள்தீப் அகர்பத்தி - ₹45)	45	1 Big Pack (₹45)	images/mangaldeep_agarbathi.png	fa-hands-praying	TRUE
+dev-zedblack-agarbathi-45rs	devotional	Zed Black Agarbathi (ஸெட் பிளாக் அகர்பத்தி - ₹45)	45	1 Pack (₹45)	images/zedblack_agarbathi.png	fa-hands-praying	TRUE
+dev-whitestick-agarbathi-45rs	devotional	White Stick Agarbathi (ஒயிட் ஸ்டிக் அகர்பத்தி - ₹45)	45	1 Pack (₹45)	images/whitestick_agarbathi.png	fa-hands-praying	TRUE
+dev-sadhavi-agarbathi-30rs	devotional	Sadhavi Agarbathi (சாத்வி அகர்பத்தி - ₹30)	30	1 Pack (₹30)	images/sadhavi_agarbathi.png	fa-hands-praying	TRUE
+dev-sivam-sambrani-16rs	devotional	Sivam Sambrani (சிவம் சாம்பிராணி - ₹16)	16	1 Pack (₹16)	images/sivam_sambrani.png	fa-fire-flame-curved	TRUE
+dev-mangaldeep-sambrani-20rs	devotional	Mangaldeep Sambrani (மங்கள்தீப் சாம்பிராணி - ₹20)	20	1 Pack (₹20)	images/mangaldeep_sambrani.png	fa-fire-flame-curved	TRUE
+dev-camel-sambrani-16rs	devotional	Camel Sambrani (கேமல் சாம்பிராணி - ₹16)	16	1 Pack (₹16)	images/camel_sambrani.png	fa-fire-flame-curved	TRUE
+dev-sugandhi-sambrani-15rs	devotional	Sugandhi Sambrani (சுகந்தி சாம்பிராணி - ₹15)	15	1 Pack (₹15)	images/sugandhi_sambrani.png	fa-fire-flame-curved	TRUE
+dev-cup-sambrani-50rs	devotional	Cup Sambrani Box (கப் சாம்பிராணி பாக்ஸ் - ₹50)	50	1 Box (₹50)	images/cup_sambrani.png	fa-fire-flame-curved	TRUE
+dev-katti-sambrani-20rs	devotional	Katti Sambrani (கட்டி சாம்பிராணி - ₹20)	20	1 Packet (₹20)	images/katti_sambrani.png	fa-fire-flame-curved	TRUE
+dev-kumkum-5rs	devotional	Pooja Kumkum (பூஜை குங்குமம் - ₹5)	5	1 Small Pack (₹5)	images/pooja_kumkum.png	fa-spa	TRUE
+dev-kumkum-10rs	devotional	Pooja Kumkum (பூஜை குங்குமம் - ₹10)	10	1 Medium Pack (₹10)	images/pooja_kumkum.png	fa-spa	TRUE
+dev-turmeric-15rs	devotional	Pooja Turmeric Powder (பூஜை மஞ்சள் தூள் - ₹15)	15	1 Pack (₹15)	images/pooja_turmeric.png	fa-mortar-pestle	TRUE
+dev-vibhuti-5rs	devotional	Holy Ash / Vibhuti (தூய திருநீறு / விபூதி - ₹5)	5	1 Small Pack (₹5)	images/pooja_vibhuti.png	fa-hands-praying	TRUE
+dev-vibhuti-10rs	devotional	Holy Ash / Vibhuti (தூய திருநீறு / விபூதி - ₹10)	10	1 Medium Pack (₹10)	images/pooja_vibhuti.png	fa-hands-praying	TRUE
+dev-vibhuti-25rs	devotional	Holy Ash / Vibhuti (தூய திருநீறு / விபூதி - ₹25)	25	1 Big Pack (₹25)	images/pooja_vibhuti.png	fa-hands-praying	TRUE
+dev-sandal-pkt-10rs	devotional	Sandal Tablet / Packet (சந்தன மாத்திரை / பாக்கெட் - ₹10)	10	1 Packet (₹10)	images/sandal_packet.png	fa-spa	TRUE
+dev-sandal-pkt-25rs	devotional	Sandal Tablet / Packet (சந்தன மாத்திரை / பாக்கெட் - ₹25)	25	1 Big Packet (₹25)	images/sandal_packet.png	fa-spa	TRUE
+dev-sandal-btl-23rs	devotional	Sandal Paste Bottle (சந்தன பேஸ்ட் பாட்டில் - ₹23)	23	1 Bottle (₹23)	images/sandal_bottle.png	fa-spa	TRUE
+dev-cotton-wicks-2rs	devotional	Cotton Wicks / Lamp Thiri (விளக்கு பஞ்சு திரி - ₹2)	2	1 Small Pack (₹2)	images/cotton_wicks.png	fa-fire	TRUE
+dev-cotton-wicks-3rs	devotional	Cotton Wicks / Lamp Thiri (விளக்கு பஞ்சு திரி - ₹3)	3	1 Pack (₹3)	images/cotton_wicks.png	fa-fire	TRUE
+dev-matchbox-1rs	devotional	Safety Matchbox (தீப்பெட்டி - ₹1)	1	1 Single Box (₹1)	images/safety_matchbox.png	fa-fire	TRUE
+dev-matchbox-2rs	devotional	Safety Matchbox (தீப்பெட்டி - ₹2)	2	1 Big Box (₹2)	images/safety_matchbox.png	fa-fire	TRUE
+dev-matchbox-bundle-10rs	devotional	Safety Matchbox Bundle (தீப்பெட்டி கட்டு - 10 Boxes)	10	10 Pieces Pack (₹10)	images/safety_matchbox_bundle.png	fa-fire	TRUE
